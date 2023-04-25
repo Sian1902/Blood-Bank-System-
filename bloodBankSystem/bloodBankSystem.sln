@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bloodBankSystem", "bloodBankSystem\bloodBankSystem.vcxproj", "{5257A112-1663-4EF9-8D7C-559AFA182258}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bloodBankSystem", "bloodBankSystem\bloodBankSystem.vcxproj", "{7604968F-8335-45E0-AAE0-9CFA65D0994B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5257A112-1663-4EF9-8D7C-559AFA182258}.Debug|x64.ActiveCfg = Debug|x64
-		{5257A112-1663-4EF9-8D7C-559AFA182258}.Debug|x64.Build.0 = Debug|x64
-		{5257A112-1663-4EF9-8D7C-559AFA182258}.Release|x64.ActiveCfg = Release|x64
-		{5257A112-1663-4EF9-8D7C-559AFA182258}.Release|x64.Build.0 = Release|x64
+		{7604968F-8335-45E0-AAE0-9CFA65D0994B}.Debug|x64.ActiveCfg = Debug|x64
+		{7604968F-8335-45E0-AAE0-9CFA65D0994B}.Debug|x64.Build.0 = Debug|x64
+		{7604968F-8335-45E0-AAE0-9CFA65D0994B}.Release|x64.ActiveCfg = Release|x64
+		{7604968F-8335-45E0-AAE0-9CFA65D0994B}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8A050BCC-5927-4FA7-81E6-289E5806E2E3}
+		SolutionGuid = {D9092D24-D92F-4887-ACE3-B69B66EA0284}
 	EndGlobalSection
 EndGlobal

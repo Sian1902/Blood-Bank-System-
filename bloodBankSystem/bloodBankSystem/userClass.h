@@ -1,21 +1,21 @@
 #pragma once
 #include<iostream>
-#include"bloodTypes.h"
-#include"emailClass.h"
+#include"BloodTypes.h"
+#include"EmailClass.h"
 #include <regex>
 using namespace std;
-class userClass
+class UserClass
 {
 protected:
     char id[14];
     string name;
-    emailClass email;
+    EmailClass email;
     string password;
     int age;
     enum Gender { MALE, FEMALE } gender;
-    bloodType bloodType;
+    BloodType bloodType;
 public:
-    userClass();
+    UserClass();
     virtual void deleteAccount() = 0;
     virtual void updateInfo() = 0;
     virtual void logIn() = 0;

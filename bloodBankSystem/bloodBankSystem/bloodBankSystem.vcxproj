@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5257A112-1663-4EF9-8D7C-559AFA182258}</ProjectGuid>
+    <ProjectGuid>{7604968F-8335-45E0-AAE0-9CFA65D0994B}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
@@ -83,30 +83,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BloodBankClass.cpp" />
+    <ClCompile Include="BloodClass.cpp" />
+    <ClCompile Include="DateClass.cpp" />
+    <ClCompile Include="DonorClass.cpp" />
+    <ClCompile Include="EmailClass.cpp" />
+    <ClCompile Include="RecipientClass.cpp" />
+    <ClCompile Include="UserClass.cpp" />
     <QtRcc Include="bloodBankSystem.qrc" />
     <QtUic Include="bloodBankSystem.ui" />
     <QtMoc Include="bloodBankSystem.h" />
-    <ClCompile Include="..\..\bloodBank\bloodBank\blodClass.cpp" />
-    <ClCompile Include="..\..\bloodBank\bloodBank\bloodBankClass.cpp" />
-    <ClCompile Include="..\..\bloodBank\bloodBank\bloodClass.cpp" />
-    <ClCompile Include="..\..\bloodBank\bloodBank\dateClass.cpp" />
-    <ClCompile Include="..\..\bloodBank\bloodBank\emailClass.cpp" />
-    <ClCompile Include="..\..\bloodBank\bloodBank\recipeintClass.cpp" />
-    <ClCompile Include="..\..\bloodBank\bloodBank\userClass.cpp" />
     <ClCompile Include="bloodBankSystem.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\bloodBank\bloodBank\blodClass.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\bloodBankClass.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\bloodClass.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\bloodTypes.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\dateClass.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\donorClass.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\emailClass.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\recipeintClass.h" />
-    <QtMoc Include="..\..\bloodBank\bloodBank\bloodBank.h" />
-    <ClInclude Include="..\..\bloodBank\bloodBank\userClass.h" />
+    <ClInclude Include="BloodBankClass.h" />
+    <ClInclude Include="BloodClass.h" />
+    <ClInclude Include="BloodTypes.h" />
+    <ClInclude Include="DateClass.h" />
+    <ClInclude Include="DonorClass.h" />
+    <ClInclude Include="EmailClass.h" />
+    <ClInclude Include="RecipientClass.h" />
+    <ClInclude Include="UserClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

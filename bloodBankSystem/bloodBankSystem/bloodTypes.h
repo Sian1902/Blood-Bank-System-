@@ -1,5 +1,5 @@
 #pragma once
-enum class bloodType {
+enum class BloodType {
     A_POSITIVE,
     A_NEGATIVE,
     B_POSITIVE,

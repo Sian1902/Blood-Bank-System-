@@ -7,7 +7,7 @@
 #include <ctime>  
 using namespace std;
 using namespace std::chrono;
-class dateClass
+class DateClass
 {
 	string donationDate;
 	string expirationDate;

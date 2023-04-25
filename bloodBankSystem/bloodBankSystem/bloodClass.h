@@ -1,23 +1,23 @@
 #pragma once
-#include"bloodTypes.h"
+#include"BloodTypes.h"
 #include <chrono>
 #include<iostream>
 #include <iomanip>
 #include <sstream>
 #include <string>
-#include"dateClass.h"
+#include"DateClass.h"
 using namespace std;
 using namespace std::chrono;
-class bloodClass
+class BloodClass
 {
 	int quantity;
-	bloodType donorBloodType;
-	dateClass donationDateDetails;
+	BloodType donorBloodType;
+	DateClass donationDateDetails;
 public:
-	bloodClass();
+	BloodClass();
 	void setQuantity(int);
 	int getQuantity() const;
-	void setdonorBloodType(bloodType);
-	bloodType getdonorBloodType() const;
+	void setdonorBloodType(BloodType);
+	BloodType getdonorBloodType() const;
 
 };

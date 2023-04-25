@@ -40,59 +40,51 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\bloodBank\bloodBank\recipeintClass.cpp">
+    <ClCompile Include="UserClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\bloodBank\bloodBank\userClass.cpp">
+    <ClCompile Include="RecipientClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\bloodBank\bloodBank\blodClass.cpp">
+    <ClCompile Include="DonorClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\bloodBank\bloodBank\bloodBankClass.cpp">
+    <ClCompile Include="EmailClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\bloodBank\bloodBank\bloodClass.cpp">
+    <ClCompile Include="DateClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\bloodBank\bloodBank\dateClass.cpp">
+    <ClCompile Include="BloodClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\bloodBank\bloodBank\emailClass.cpp">
+    <ClCompile Include="BloodBankClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="..\..\bloodBank\bloodBank\bloodBank.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\bloodBank\bloodBank\userClass.h">
+    <ClInclude Include="UserClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\blodClass.h">
+    <ClInclude Include="RecipientClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\bloodBankClass.h">
+    <ClInclude Include="DonorClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\bloodClass.h">
+    <ClInclude Include="EmailClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\bloodTypes.h">
+    <ClInclude Include="DateClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\dateClass.h">
+    <ClInclude Include="BloodTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\donorClass.h">
+    <ClInclude Include="BloodClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\emailClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\bloodBank\bloodBank\recipeintClass.h">
+    <ClInclude Include="BloodBankClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

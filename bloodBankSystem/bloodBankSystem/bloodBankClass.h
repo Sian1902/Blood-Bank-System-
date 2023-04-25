@@ -3,25 +3,25 @@
 #include<unordered_map>
 #include <string>
 #include <vector>
-#include"bloodTypes.h"
-#include"bloodClass.h"
-#include"userClass.h"
-#include"donorClass.h"
-#include "recipeintClass.h"
-#include"bloodClass.h"
-#include"dateClass.h"
+#include"BloodTypes.h"
+#include"BloodClass.h"
+#include"UserClass.h"
+#include"DonorClass.h"
+#include"RecipientClass.h"
+#include"BloodClass.h"
+#include"DateClass.h"
 using namespace std;
-class bloodBankClass
+class BloodBankClass
 {
 public:
-	static unordered_map<bloodType, vector<bloodClass>> bloodDataMap;
+	static unordered_map<BloodType, vector<BloodClass>> bloodDataMap;
 	static int totalBlood;
-	static unordered_map<string, donorClass> donorsDataMap;
+	static unordered_map<string, DonorClass> donorsDataMap;
 	static int numOfDonors;
-	static unordered_map<string, recipientClass> recipientsDataMap;
+	static unordered_map<string, RecipientClass> recipientsDataMap;
 	static int numOfReceivers;
 	static int numOfHospitals;
-	bloodBankClass()
+	BloodBankClass()
 	{
 		totalBlood = 0;
 		numOfDonors = 0;

@@ -1,12 +1,12 @@
-#include "emailClass.h"
-emailClass::emailClass() {
+#include "EmailClass.h"
+EmailClass::EmailClass() {
     userEmail = "xx@gmail.com";
 }
-string emailClass::getEmail()
+string EmailClass::getEmail()
 {
     return userEmail;
 }
-void emailClass::setEmail()
+void EmailClass::setEmail()
 {
     cout << "please enter your email" << endl;
     string email;

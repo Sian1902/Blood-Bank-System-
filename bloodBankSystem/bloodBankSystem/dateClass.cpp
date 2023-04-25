@@ -1,10 +1,10 @@
-#include "dateClass.h"
-void dateClass::setDate(string date)
+#include "DateClass.h"
+void DateClass::setDate(string date)
 {
     donationDate = date;
     setExpirationDate();
 }
-void dateClass::setDate()
+void DateClass::setDate()
 {
     time_t t = time(0);
     char buffer[26];
@@ -12,15 +12,15 @@ void dateClass::setDate()
     donationDate = buffer;
     setExpirationDate();
 }
-string dateClass::getDonationDate() const
+string DateClass::getDonationDate() const
 {
     return donationDate;
 }
-string dateClass::getExpirationDate() const
+string DateClass::getExpirationDate() const
 {
     return expirationDate;
 }
-void dateClass::setExpirationDate()
+void DateClass::setExpirationDate()
 {
     tm timeIn = {};
     istringstream ss(donationDate);

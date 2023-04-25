@@ -1,22 +1,22 @@
-#include "bloodClass.h"
-bloodClass::bloodClass()
+#include "BloodClass.h"
+BloodClass::BloodClass()
 {
 	quantity = 0;
-	donorBloodType = bloodType::O_POSITIVE;
+	donorBloodType = BloodType::O_POSITIVE;
 }
-void bloodClass::setQuantity(int quan)
+void BloodClass::setQuantity(int quan)
 {
 	quantity = quan;
 }
-int bloodClass::getQuantity() const
+int BloodClass::getQuantity() const
 {
 	return quantity;
 }
-void bloodClass::setdonorBloodType(bloodType bloodtype)
+void BloodClass::setdonorBloodType(BloodType bloodtype)
 {
 	donorBloodType = bloodtype;
 }
-bloodType bloodClass::getdonorBloodType() const
+BloodType BloodClass::getdonorBloodType() const
 {
 	return donorBloodType;
 }
