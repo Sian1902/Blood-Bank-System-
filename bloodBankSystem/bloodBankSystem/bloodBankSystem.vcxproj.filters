@@ -26,15 +26,6 @@
     <QtRcc Include="bloodBankSystem.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <QtUic Include="bloodBankSystem.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtMoc Include="bloodBankSystem.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <ClCompile Include="bloodBankSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -59,6 +50,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BloodBankClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recipientPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bloodRequestPage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -87,5 +84,21 @@
     <ClInclude Include="BloodBankClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="recipientPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bloodRequestPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="recipientPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="bloodRequestPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
 </Project>

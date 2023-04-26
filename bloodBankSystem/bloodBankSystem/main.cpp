@@ -1,10 +1,12 @@
-#include "bloodBankSystem.h"
+#include "recipientPage.h"
 #include <QtWidgets/QApplication>
-
+#include"UserClass.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    bloodBankSystem w;
+    recipientPage w;
     w.show();
+   
+   
     return a.exec();
 }

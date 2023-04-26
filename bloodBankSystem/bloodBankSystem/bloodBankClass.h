@@ -21,12 +21,7 @@ public:
 	static unordered_map<string, RecipientClass> recipientsDataMap;
 	static int numOfReceivers;
 	static int numOfHospitals;
-	BloodBankClass()
-	{
-		totalBlood = 0;
-		numOfDonors = 0;
-		numOfReceivers = 0;
-		numOfHospitals = 0;
-	}
 
+	
+	
 };
