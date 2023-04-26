@@ -1,8 +1,8 @@
 #include "DateClass.h"
 void DateClass::setDate(string date)
 {
-	donationDate = date;
-   setExpirationDate();
+    donationDate = date;
+    setExpirationDate();
 }
 void DateClass::setDate()
 {

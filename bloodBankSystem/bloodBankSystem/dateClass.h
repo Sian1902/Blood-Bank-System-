@@ -17,6 +17,5 @@ public:
 	void setDate();
 	string getDonationDate() const;
 	string getExpirationDate() const;
-	
-};
 
+};

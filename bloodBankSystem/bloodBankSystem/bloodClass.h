@@ -19,6 +19,5 @@ public:
 	int getQuantity() const;
 	void setdonorBloodType(BloodType);
 	BloodType getdonorBloodType() const;
-	
-};
 
+};

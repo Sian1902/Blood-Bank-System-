@@ -1,10 +1,10 @@
 #include "EmailClass.h"
 EmailClass::EmailClass() {
-	userEmail = "xx@gmail.com";
+    userEmail = "xx@gmail.com";
 }
 string EmailClass::getEmail()
 {
-	return userEmail;
+    return userEmail;
 }
 void EmailClass::setEmail()
 {

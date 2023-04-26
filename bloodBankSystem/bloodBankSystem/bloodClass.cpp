@@ -20,5 +20,3 @@ BloodType BloodClass::getdonorBloodType() const
 {
 	return donorBloodType;
 }
-
-

@@ -12,8 +12,8 @@
 #include"DateClass.h"
 using namespace std;
 class BloodBankClass
-{ 
- public:
+{
+public:
 	static unordered_map<BloodType, vector<BloodClass>> bloodDataMap;
 	static int totalBlood;
 	static unordered_map<string, DonorClass> donorsDataMap;
@@ -30,4 +30,3 @@ class BloodBankClass
 	}
 
 };
-
