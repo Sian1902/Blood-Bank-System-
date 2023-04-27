@@ -33,7 +33,7 @@ void UserClass::setPassword(const string& password)
 { 
 	this->password = password;
 }
-int UserClass::getAge() const 
+int UserClass::getAge()  
 {
 	time_t now;
 	time(&now);

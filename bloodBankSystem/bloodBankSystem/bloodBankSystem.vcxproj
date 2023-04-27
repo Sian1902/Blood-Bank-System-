@@ -98,7 +98,6 @@
     <ClInclude Include="BloodBankClass.h" />
     <ClInclude Include="BloodClass.h" />
     <QtMoc Include="bloodRequestPage.h" />
-    <ClInclude Include="BloodTypes.h" />
     <ClInclude Include="DonorClass.h" />
     <ClInclude Include="EmailClass.h" />
     <ClInclude Include="RecipientClass.h" />

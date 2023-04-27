@@ -1,13 +1,11 @@
 #include "BloodBankClass.h"
-bool BloodBankClass::recepientRegestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string hospital, string doctorOfTheCase)
+bool BloodBankClass::Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string hospital, string doctorOfTheCase)
 {
 	RecipientClass temp;
 	if (recipientsDataMap.count(email)|| !temp.setMail(email)) {
 		return false;
 	}
-	else {
-		temp.setMail(email);
-	}
+	temp.setMail(email);
 	temp.setId(id);
 	temp.setName(name);
 	temp.setPassword(password);
@@ -56,4 +54,32 @@ bool BloodBankClass::requestBlood(int amount)
 		return true;
 	}
 	return false;
+}
+bool BloodBankClass::Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, time_t dateOfLastDonation)
+{
+	DonorClass temp;
+	if (donorsDataMap.count(email) || !temp.setMail(email)) {
+		return false;
+	}
+	temp.setMail(email);
+	temp.setId(id);
+	temp.setName(name);
+	temp.setPassword(password);
+	temp.setBirthDate(birthDate);
+	if (temp.getAge() < 18 || temp.getAge() > 60)
+	{
+		return false;
+	}
+	temp.setGender(gender);
+	temp.setBloodType(bloodType);
+	temp.setLastDonationDate(dateOfLastDonation);
+	donorsDataMap.insert({ email,temp });
+	return true;
+}
+void BloodBankClass::donationRequest()
+{
+	BloodClass donatedBlood;
+	donatedBlood.setdonorBloodType(donorsDataMap[currEmail].getBloodType());
+	donatedBlood.setDate();
+	bloodDataMap[donatedBlood.getdonorBloodType()].push(donatedBlood);
 }

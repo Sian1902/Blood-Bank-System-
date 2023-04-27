@@ -25,7 +25,7 @@ public:
     bool setMail(const string& Mail);
     string getPassword() const;
     void setPassword(const string& password);
-    int getAge() const;
+    int getAge() ;
     void setBirthDate(time_t birthDate);
     string getGender() const;
     void setGender(string gender);

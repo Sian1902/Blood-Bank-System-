@@ -1,24 +1,19 @@
 #include "BloodClass.h"
 BloodClass::BloodClass()
 {
-	donorBloodType = BloodType::O_POSITIVE;
+	donorBloodType = "";
 }
-void BloodClass::setdonorBloodType(BloodType bloodtype)
+void BloodClass::setdonorBloodType(string bloodtype)
 {
 	donorBloodType = bloodtype;
 }
-BloodType BloodClass::getdonorBloodType() const
+string BloodClass::getdonorBloodType() const
 {
 	return donorBloodType;
 }
 time_t BloodClass::getDonationDate() const 
 {
 	return donationDate;
-}
-void BloodClass::setDate(time_t donationDate)
-{
-	this->donationDate = donationDate; 
-	expirationDate = donationDate + (42 * 24 * 60 * 60);
 }
 void BloodClass::setDate()
 { 

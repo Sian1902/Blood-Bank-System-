@@ -39,9 +39,6 @@
     <ClInclude Include="BloodClass.h">
       <Filter>headers</Filter>
     </ClInclude>
-    <ClInclude Include="BloodTypes.h">
-      <Filter>headers</Filter>
-    </ClInclude>
     <ClInclude Include="DonorClass.h">
       <Filter>headers</Filter>
     </ClInclude>

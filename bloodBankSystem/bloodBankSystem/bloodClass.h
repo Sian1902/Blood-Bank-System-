@@ -1,5 +1,4 @@
 #pragma once
-#include"BloodTypes.h"
 #include <ctime>
 #include <time.h>
 #include<iostream>
@@ -9,14 +8,13 @@
 using namespace std;
 class BloodClass
 {
-	BloodType donorBloodType;
+	string donorBloodType;
 	time_t donationDate;
 	time_t expirationDate;
 public:
 	BloodClass();
-	void setdonorBloodType(BloodType);
-	BloodType getdonorBloodType() const;
+	void setdonorBloodType(string);
+	string getdonorBloodType() const;
 	time_t getDonationDate() const;
-	void setDate(time_t donationDate);
 	void setDate();
 };
