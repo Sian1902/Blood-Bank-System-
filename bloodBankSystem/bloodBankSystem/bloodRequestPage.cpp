@@ -13,7 +13,6 @@ bloodRequestPage::~bloodRequestPage()
 
 void bloodRequestPage::on_requestBtn_clicked()
 {
-	
 	QString reqAmount = ui->amount->text();
 	int x = 50;
 	if (stoi(reqAmount.toStdString()) > x){

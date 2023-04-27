@@ -1,159 +1,91 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="bloodBankSystem.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RecipientClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DonorClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EmailClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DateClass.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BloodBankClass.cpp">
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="BloodClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BloodBankClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="recipientPage.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="bloodRequestPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="UserClass.h">
-    <QtRcc Include="bloodBankSystem.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
-    <QtUic Include="bloodBankSystem.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtMoc Include="bloodBankSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RecipientClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DonorClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EmailClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DateClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BloodTypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BloodClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BloodBankClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    </QtMoc>
-    <ClCompile Include="bloodBankSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="recipientPage.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="bloodRequestPage.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="recipientPage.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="bloodRequestPage.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UserClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RecipientClass.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="DonorClass.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="EmailClass.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="BloodClass.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="BloodBankClass.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="RecipientClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="recipientPage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="UserClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="signUp.cpp">
+      <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UserClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RecipientClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DonorClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EmailClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BloodTypes.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BloodBankClass.h">
+      <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="BloodClass.h">
-      <Filter>Header Files</Filter>
+      <Filter>headers</Filter>
     </ClInclude>
-    <ClInclude Include="BloodBankClass.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BloodTypes.h">
+      <Filter>headers</Filter>
     </ClInclude>
+    <ClInclude Include="DonorClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EmailClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RecipientClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UserClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bloodRequestPage.h">
+      <Filter>headers</Filter>
+    </QtMoc>
+    <QtMoc Include="recipientPage.h">
+      <Filter>headers</Filter>
+    </QtMoc>
+    <QtMoc Include="signUp.h">
+      <Filter>headers</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="bloodRequestPage.ui">
+      <Filter>forms</Filter>
+    </QtUic>
+    <QtUic Include="recipientPage.ui">
+      <Filter>forms</Filter>
+    </QtUic>
+    <QtUic Include="signUp.ui">
+      <Filter>forms</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{1a0309b8-0f0b-4209-bba2-494d1f150c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{26d8d3ab-ec6d-4056-b1e1-c7580223ab95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="forms">
+      <UniqueIdentifier>{e925d1ab-f743-40dd-b6c6-301809d38fd1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

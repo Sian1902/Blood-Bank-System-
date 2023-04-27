@@ -6,11 +6,10 @@ recipientPage::recipientPage(QWidget *parent)
 {
 	ui.setupUi(this);
 }
-
 recipientPage::~recipientPage()
 {}
 void recipientPage::on_requestBloodBtn_clicked() {
+
 	p = new bloodRequestPage(this);
 	p ->show();
-	
 }

@@ -2,7 +2,7 @@
 #include<iostream>
 #include<unordered_map>
 #include <string>
-#include <vector>
+#include <queue>
 #include"BloodTypes.h"
 #include"BloodClass.h"
 #include"UserClass.h"
@@ -12,12 +12,19 @@
 using namespace std;
 class BloodBankClass
 {
-
-	//unordered_map<BloodType, vector<BloodClass>> bloodDataMap;
-	//unordered_map<string, DonorClass> donorsDataMap;
-	//unordered_map<string, RecipientClass> recipientsDataMap;
+	
+	unordered_map<string, queue<BloodClass>> bloodDataMap;
+	unordered_map<string, DonorClass> donorsDataMap;
+	unordered_map<string, RecipientClass> recipientsDataMap;
 	//static int numOfHospitals;
 public:
-	BloodBankClass();
-
+	string currEmail;
+	//BloodBankClass();
+	bool recepientRegestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string Hospital, string doctorOfTheCase);;
+	bool  login(string email, string password, bool isDonor);
+	void deleteDonor();
+	void deleteRecipient();
+	int searchForBlood();
+	bool requestBlood(int amount);
+	//show blood data
 };

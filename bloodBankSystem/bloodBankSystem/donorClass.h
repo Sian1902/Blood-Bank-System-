@@ -3,6 +3,7 @@
 #include<ctime>
 class DonorClass : public UserClass
 {
+	
 	time_t lastDonationDate;
 public:
 	time_t getLastDonationDate() const;
