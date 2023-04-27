@@ -1,5 +1,15 @@
 #include "UserClass.h"
-UserClass::UserClass() :  gender(0), bloodType(0), name(0), password(0), id(0) {}
+
+UserClass::UserClass()
+{
+	id = " ";
+	gender=" ";
+	bloodType = " ";
+	name=" ";
+	password=" ";
+
+	time(&birthDate);
+}
 string UserClass::getId() const 
 { 
 	return id;

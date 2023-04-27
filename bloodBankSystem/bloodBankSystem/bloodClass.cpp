@@ -2,6 +2,8 @@
 BloodClass::BloodClass()
 {
 	donorBloodType = "";
+	time(&donationDate);
+	time(&expirationDate);
 }
 void BloodClass::setdonorBloodType(string bloodtype)
 {

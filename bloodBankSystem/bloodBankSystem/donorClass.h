@@ -8,5 +8,6 @@ class DonorClass : public UserClass
 public:
 	time_t getLastDonationDate() const;
 	void setLastDonationDate(time_t lastDonationDate);
+	DonorClass();
 };
 

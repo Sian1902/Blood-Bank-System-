@@ -1,17 +1,22 @@
 #include "RecipientClass.h"
-string RecipientClass::getHospital() const 
+RecipientClass::RecipientClass()
+{
+	hospital="gfgf";
+	doctorOftheCase = " ";
+}
+string RecipientClass::getHospital()
 {
 	return hospital;
 }
-void RecipientClass::setHospital(const string& hospital) 
+void RecipientClass::setHospital( string hospital) 
 {
 	this->hospital = hospital;
 }
-string RecipientClass::getDoctorOftheCase() const 
+string RecipientClass::getDoctorOftheCase()  
 {
 	return doctorOftheCase; 
 }
-void RecipientClass::setDoctorOftheCase(const string& doctorOftheCase) 
+void RecipientClass::setDoctorOftheCase( string doctorOftheCase) 
 { 
 	this->doctorOftheCase = doctorOftheCase;
 }

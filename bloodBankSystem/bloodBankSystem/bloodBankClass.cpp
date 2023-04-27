@@ -10,7 +10,7 @@ using namespace std;
 bool BloodBankClass::Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string hospital, string doctorOfTheCase)
 {
 	RecipientClass temp;
-	if (recipientsDataMap.count(email)|| !temp.setMail(email)) {
+	if (donorsDataMap.count(email) ||recipientsDataMap.count(email)|| !temp.setMail(email)) {
 		return false;
 	}
 	temp.setMail(email);
@@ -66,7 +66,7 @@ bool BloodBankClass::requestBlood(int amount)
 bool BloodBankClass::Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, time_t dateOfLastDonation)
 {
 	DonorClass temp;
-	if (donorsDataMap.count(email) || !temp.setMail(email)) {
+	if (recipientsDataMap.count(email) ||donorsDataMap.count(email) || !temp.setMail(email)) {
 		return false;
 	}
 	temp.setMail(email);
@@ -101,7 +101,7 @@ void BloodBankClass::writeDonors(unordered_map<string, DonorClass>& donorsDataMa
 	}
 	unordered_map<string, DonorClass>::iterator it;
 	for (it = donorsDataMap.begin(); it != donorsDataMap.end(); it++) {
-		out << it->second.getMail() << it->second.getName() << it->second.getPassword() << it->second.getBirthDate() << it->second.getBloodType() << it->second.getGender() << it->second.getId() << it->second.getLastDonationDate()<<endl;
+		out << it->second.getMail() << " " << it->second.getName() << " " << it->second.getPassword() << " " << it->second.getBirthDate() << " " << it->second.getBloodType() << " " << it->second.getGender() << " " << it->second.getId() << " " << it->second.getLastDonationDate()<<endl;
 	}
 	out.close();
 }
@@ -116,7 +116,7 @@ void BloodBankClass::writeBlood(unordered_map<string, queue<BloodClass>>& bloodD
 	unordered_map<string, queue<BloodClass>>::iterator it;
 	for (it = bloodDataMap.begin(); it != bloodDataMap.end(); it++) {
 		while (!it->second.empty()) {
-			out << it->second.front().getDonationDate() << it->second.front().getdonorBloodType() << endl;
+			out << it->second.front().getDonationDate() <<" " << it->second.front().getdonorBloodType() << endl;
 			it->second.pop();
 		}
 	}
@@ -132,7 +132,7 @@ void BloodBankClass::writeRecipients(unordered_map<string, RecipientClass>& reci
 	}
 	unordered_map<string, RecipientClass>::iterator it;
 	for (it = recipientsDataMap.begin(); it != recipientsDataMap.end(); it++) {
-		out << it->second.getMail() << it->second.getName() << it->second.getPassword() << it->second.getBirthDate() << it->second.getBloodType() << it->second.getGender() << it->second.getId() << it->second.getDoctorOftheCase()<< it->second.getHospital();
+		out << it->second.getMail() << " " << it->second.getName() << " " << it->second.getPassword() << " " << it->second.getBirthDate() << " " << it->second.getBloodType() << it->second.getGender() << " " << it->second.getId() << " " << it->second.getDoctorOftheCase() << " " << it->second.getHospital()<<endl;
 	}
 	out.close();
 }
@@ -188,8 +188,8 @@ void BloodBankClass::readRecipients(unordered_map<string, RecipientClass>& recip
 		return;
 	}
 	recipient input;
-	while (in >> input.name) {
-		in >> input.email >> input.password >> input.birthDate >> input.bloodType >> input.gender >> input.id >> input.doctorOftheCase>>input.hospital;
+	while (in >> input.email) {
+		in >> input.name >> input.password >> input.birthDate >> input.bloodType >> input.gender >> input.id >> input.doctorOftheCase>>input.hospital;
 		email = input.email;
 		temp.setMail(email);
 		temp.setName(input.name);
@@ -209,7 +209,7 @@ void BloodBankClass::readRecipients(unordered_map<string, RecipientClass>& recip
 BloodBankClass::BloodBankClass()
 {
 	readBlood(bloodDataMap);
-	readDonors(donorsDataMap);
+    readDonors(donorsDataMap);
 	readRecipients(recipientsDataMap);
 }
 
