@@ -61,3 +61,8 @@ void UserClass::setBloodType(string bloodType)
 {
 	this->bloodType = bloodType;
 }
+
+time_t UserClass::getBirthDate()
+{
+	return birthDate;
+}

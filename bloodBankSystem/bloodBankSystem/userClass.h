@@ -31,4 +31,5 @@ public:
     void setGender(string gender);
     string getBloodType() const;
     void setBloodType(string bloodType);
+    time_t getBirthDate();
 };
