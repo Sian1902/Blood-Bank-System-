@@ -9,6 +9,7 @@
 #include"DonorClass.h"
 #include"RecipientClass.h"
 #include"BloodClass.h"
+<<<<<<< HEAD
 #include"DateClass.h"
 using namespace std;
 class BloodBankClass
@@ -24,4 +25,17 @@ public:
 
 	
 	
+=======
+using namespace std;
+class BloodBankClass
+{
+
+	//unordered_map<BloodType, vector<BloodClass>> bloodDataMap;
+	//unordered_map<string, DonorClass> donorsDataMap;
+	//unordered_map<string, RecipientClass> recipientsDataMap;
+	//static int numOfHospitals;
+public:
+	BloodBankClass();
+
+>>>>>>> Osama
 };

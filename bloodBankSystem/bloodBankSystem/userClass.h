@@ -7,7 +7,7 @@ using namespace std;
 class UserClass
 {
 protected:
-    char id[14];
+    string id;
     string name;
     EmailClass email;
     string password;
@@ -16,11 +16,18 @@ protected:
     BloodType bloodType;
 public:
     UserClass();
-    virtual void deleteAccount() = 0;
-    virtual void updateInfo() = 0;
-    virtual void logIn() = 0;
-    virtual void regestiration() = 0;
-
-
-
+    string getId() const;
+    void setId(const string& id);
+    string getName() const;
+    void setName(const string& name);
+    string getMail() ;
+    void setMail(const string& Mail);
+    string getPassword() const;
+    void setPassword(const string& password);
+    int getAge() const;
+    void setAge(int age);
+    Gender getGender() const;
+    void setGender(Gender gender);
+    BloodType getBloodType() const;
+    void setBloodType(BloodType bloodType);
 };

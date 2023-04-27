@@ -6,16 +6,12 @@ string EmailClass::getEmail()
 {
     return userEmail;
 }
-void EmailClass::setEmail()
+void EmailClass::setEmail(const string&email)
 {
-    cout << "please enter your email" << endl;
-    string email;
-    cin >> email;
     if (regex_match(email, email_regex)) {
         userEmail = email;
     }
     else {
         cout << "Invalid email address" << endl;
-        setEmail();
     }
 }
