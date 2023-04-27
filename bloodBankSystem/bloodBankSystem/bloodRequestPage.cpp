@@ -10,19 +10,19 @@ bloodRequestPage::bloodRequestPage(QWidget *parent)
 
 bloodRequestPage::~bloodRequestPage()
 {}
-int BloodBankClass::totalBlood = 50;
+
 void bloodRequestPage::on_requestBtn_clicked()
 {
 	
 	QString reqAmount = ui->amount->text();
-
-	if (stoi(reqAmount.toStdString()) > BloodBankClass::totalBlood) {
+	int x = 50;
+	if (stoi(reqAmount.toStdString()) > x){
 		ui->stateTxt->setText("Failed");
 		ui->amount->clear();
 	}
 	else {
 		ui->stateTxt->setText("succeeded");
-		BloodBankClass::totalBlood -= stoi(reqAmount.toStdString());
+	     x-= stoi(reqAmount.toStdString());
 		ui->amount->clear();
 	}
 

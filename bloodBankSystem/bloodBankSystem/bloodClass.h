@@ -16,11 +16,7 @@ public:
 	BloodClass();
 	void setdonorBloodType(BloodType);
 	BloodType getdonorBloodType() const;
-<<<<<<< HEAD
-
-=======
 	time_t getDonationDate() const;
 	void setDate(time_t donationDate);
 	void setDate();
->>>>>>> Osama
 };

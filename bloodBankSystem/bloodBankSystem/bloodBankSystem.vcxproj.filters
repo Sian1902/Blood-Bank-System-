@@ -26,20 +26,91 @@
     <QtRcc Include="bloodBankSystem.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-<<<<<<< HEAD
-=======
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecipientClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DonorClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EmailClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DateClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BloodClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BloodBankClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recipientPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bloodRequestPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UserClass.h">
+    <QtRcc Include="bloodBankSystem.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
     <QtUic Include="bloodBankSystem.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtMoc Include="bloodBankSystem.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecipientClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DonorClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EmailClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DateClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodBankClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     </QtMoc>
     <ClCompile Include="bloodBankSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
->>>>>>> Osama
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="recipientPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="bloodRequestPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="recipientPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="bloodRequestPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -58,20 +129,7 @@
     <ClCompile Include="BloodClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="BloodClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="BloodBankClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="recipientPage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bloodRequestPage.cpp">
-=======
-    <ClCompile Include="BloodBankClass.cpp">
->>>>>>> Osama
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -88,12 +146,6 @@
     <ClInclude Include="EmailClass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="DateClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-=======
->>>>>>> Osama
     <ClInclude Include="BloodTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -104,23 +156,4 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-<<<<<<< HEAD
-  <ItemGroup>
-    <QtMoc Include="recipientPage.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="bloodRequestPage.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="recipientPage.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="bloodRequestPage.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-  </ItemGroup>
-=======
->>>>>>> Osama
 </Project>

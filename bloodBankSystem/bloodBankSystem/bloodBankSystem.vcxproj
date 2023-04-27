@@ -85,7 +85,6 @@
   <ItemGroup>
     <ClCompile Include="BloodBankClass.cpp" />
     <ClCompile Include="BloodClass.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="bloodRequestPage.cpp" />
     <ClCompile Include="DateClass.cpp" />
     <ClCompile Include="DonorClass.cpp" />
@@ -94,22 +93,14 @@
     <ClCompile Include="recipientPage.cpp" />
     <ClCompile Include="UserClass.cpp" />
     <QtRcc Include="bloodBankSystem.qrc" />
-=======
-    <ClCompile Include="DonorClass.cpp" />
-    <ClCompile Include="EmailClass.cpp" />
-    <ClCompile Include="RecipientClass.cpp" />
-    <ClCompile Include="UserClass.cpp" />
-    <QtRcc Include="bloodBankSystem.qrc" />
     <QtUic Include="bloodBankSystem.ui" />
     <QtMoc Include="bloodBankSystem.h" />
     <ClCompile Include="bloodBankSystem.cpp" />
->>>>>>> Osama
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BloodBankClass.h" />
     <ClInclude Include="BloodClass.h" />
-<<<<<<< HEAD
     <QtMoc Include="bloodRequestPage.h" />
     <ClInclude Include="BloodTypes.h" />
     <ClInclude Include="DateClass.h" />
@@ -123,14 +114,6 @@
     <QtUic Include="bloodRequestPage.ui" />
     <QtUic Include="recipientPage.ui" />
   </ItemGroup>
-=======
-    <ClInclude Include="BloodTypes.h" />
-    <ClInclude Include="DonorClass.h" />
-    <ClInclude Include="EmailClass.h" />
-    <ClInclude Include="RecipientClass.h" />
-    <ClInclude Include="UserClass.h" />
-  </ItemGroup>
->>>>>>> Osama
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
     <Import Project="$(QtMsBuild)\qt.targets" />
