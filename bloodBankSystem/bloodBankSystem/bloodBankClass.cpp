@@ -205,3 +205,18 @@ void BloodBankClass::readRecipients(unordered_map<string, RecipientClass>& recip
 
 	in.close();
 }
+
+BloodBankClass::BloodBankClass()
+{
+	readBlood(bloodDataMap);
+	readDonors(donorsDataMap);
+	readRecipients(recipientsDataMap);
+}
+
+BloodBankClass::~BloodBankClass()
+{
+
+	writeBlood(bloodDataMap);
+	writeDonors(donorsDataMap);
+	writeRecipients(recipientsDataMap);
+}
