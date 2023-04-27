@@ -1,23 +1,22 @@
 #pragma once
 #include"BloodTypes.h"
-#include <chrono>
+#include <ctime>
+#include <time.h>
 #include<iostream>
 #include <iomanip>
 #include <sstream>
 #include <string>
-#include"DateClass.h"
 using namespace std;
-using namespace std::chrono;
 class BloodClass
 {
-	int quantity;
 	BloodType donorBloodType;
-	DateClass donationDateDetails;
+	time_t donationDate;
+	time_t expirationDate;
 public:
 	BloodClass();
-	void setQuantity(int);
-	int getQuantity() const;
 	void setdonorBloodType(BloodType);
 	BloodType getdonorBloodType() const;
-
+	time_t getDonationDate() const;
+	void setDate(time_t donationDate);
+	void setDate();
 };

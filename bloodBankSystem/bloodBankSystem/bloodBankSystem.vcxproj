@@ -85,7 +85,6 @@
   <ItemGroup>
     <ClCompile Include="BloodBankClass.cpp" />
     <ClCompile Include="BloodClass.cpp" />
-    <ClCompile Include="DateClass.cpp" />
     <ClCompile Include="DonorClass.cpp" />
     <ClCompile Include="EmailClass.cpp" />
     <ClCompile Include="RecipientClass.cpp" />
@@ -100,7 +99,6 @@
     <ClInclude Include="BloodBankClass.h" />
     <ClInclude Include="BloodClass.h" />
     <ClInclude Include="BloodTypes.h" />
-    <ClInclude Include="DateClass.h" />
     <ClInclude Include="DonorClass.h" />
     <ClInclude Include="EmailClass.h" />
     <ClInclude Include="RecipientClass.h" />

@@ -10,6 +10,6 @@ class EmailClass
 	const regex email_regex{ R"([\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{1,7})" };
 public:
 	EmailClass();
-	void setEmail();
+	void setEmail(const string&email);
 	string getEmail();
 };
