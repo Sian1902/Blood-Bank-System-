@@ -108,7 +108,7 @@ void BloodBankClass::writeDonors(unordered_map<string, DonorClass>& donorsDataMa
 
 void BloodBankClass::writeBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap)
 {
-	fstream out("donorData.txt", ios::out);
+	fstream out("bloodData.txt", ios::out);
 	if (!out) {
 		cout << "file not found";
 		return;
@@ -164,7 +164,7 @@ void BloodBankClass::readDonors(unordered_map<string,DonorClass>& donorDataMap)
 
 void BloodBankClass::readBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap)
 {
-	ifstream in("recipientData.txt");
+	ifstream in("bloodData.txt");
 	if (!in) {
 		cout << "file not found";
 		return;
