@@ -8,7 +8,8 @@ int main(int argc, char *argv[])
     time_t t;
     time(&t);
     BloodBankClass b;
-    b.Regestration("osama", "12345678765432", "omar@gmail.com", "1234", t / 2, "male", "A-", "cvb", "bnm");
+    b.login("tebo@gmail.com", "1234", 0);
+    b.requestBlood(3);
     QApplication a(argc, argv);
     recipientPage w;
     w.show();
