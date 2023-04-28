@@ -28,15 +28,19 @@ bool BloodBankClass::Regestration(string name, string id, string email, string p
 bool BloodBankClass::login(string email, string password, bool isDonor)
 {
 	if (isDonor) {
-		if (donorsDataMap[email].getPassword() == password) {
-			currEmail = email;
-			return true;
+		if (donorsDataMap.count(email)) {
+			if (donorsDataMap[email].getPassword() == password) {
+				currEmail = email;
+				return true;
+			}
 		}
 	}
 	else {
-		if (recipientsDataMap[email].getPassword() == password) {
-			currEmail = email;
-			return true;
+		if (recipientsDataMap.count(email)) {
+			if (recipientsDataMap[email].getPassword() == password) {
+				currEmail = email;
+				return true;
+			}
 		}
 	}
 	return false;
@@ -146,8 +150,8 @@ void BloodBankClass::readDonors(unordered_map<string,DonorClass>& donorDataMap)
 		return;
 	}
 	donor input;
-	while ( in >> input.name) {
-		in>>input.email >> input.password >> input.birthDate >> input.bloodType >> input.gender >> input.id >> input.lastDonationDate;
+	while ( in >> input.email) {
+		in>>input.name >> input.password >> input.birthDate >> input.bloodType >> input.gender >> input.id >> input.lastDonationDate;
 		temp.setMail(input.email);
 		temp.setName(input.name);
 		temp.setBirthDate(input.birthDate);
