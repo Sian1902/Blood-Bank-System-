@@ -19,6 +19,13 @@ set(PROJECT_SOURCES
         user.cpp
         user.h
         bloodbank.ui
+        signup.cpp
+        signup.h
+        signup.ui
+        forgotpassword.cpp
+        forgotpassword.h
+        forgotpassword.ui
+        resources.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
