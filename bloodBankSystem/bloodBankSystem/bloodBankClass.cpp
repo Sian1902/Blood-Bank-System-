@@ -120,7 +120,7 @@ void BloodBankClass::writeBlood(unordered_map<string, queue<BloodClass>>& bloodD
 	unordered_map<string, queue<BloodClass>>::iterator it;
 	for (it = bloodDataMap.begin(); it != bloodDataMap.end(); it++) {
 		while (!it->second.empty()) {
-			out << it->second.front().getDonationDate() <<" " << it->second.front().getdonorBloodType() << endl;
+			out << it->second.front().getdonorBloodType() <<" " << it->second.front().getDonationDate() << endl;
 			it->second.pop();
 		}
 	}
@@ -176,7 +176,7 @@ void BloodBankClass::readBlood(unordered_map<string, queue<BloodClass>>& bloodDa
 	blood input;
 	BloodClass temp;
 	while (in >> input.donorBloodType) {
-		in >> input.donationDate >> input.donorBloodType;
+		in >> input.donationDate;
 		bloodDataMap[input.donorBloodType].push(temp);
 	}
 
