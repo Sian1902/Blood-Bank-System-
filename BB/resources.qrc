@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>icons8-sphere-48 (1).png</file>
+        <file>icons8-sphere-48 (2).png</file>
+        <file>icons8-sphere-48.png</file>
+        <file>icons8-sphere-48 (3).png</file>
+    </qresource>
+</RCC>
