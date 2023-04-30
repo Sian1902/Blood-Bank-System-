@@ -26,6 +26,25 @@ set(PROJECT_SOURCES
         forgotpassword.h
         forgotpassword.ui
         resources.qrc
+        bloodBankClass.h
+        bloodBankClass.cpp
+        bloodClass.h
+        bloodClass.cpp
+        bloodRequestPage.h
+        bloodRequestPage.cpp
+        bloodRequestPage.ui
+        donorClass.h
+        donorClass.cpp
+        emailClass.h
+        emailClass.cpp
+        recipientPage.h
+        recipientPage.cpp
+        recipientPage.ui
+        userClass.h
+        userClass.cpp
+        RecipientClass.h
+        RecipientClass.cpp
+        bloodTypes.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

@@ -1,11 +1,10 @@
 #include "bloodbank.h"
+#include <QDebug>
 #include <QFile>
 #include "./ui_bloodbank.h"
+#include "bloodBankClass.h"
 #include "forgotpassword.h"
 #include "signup.h"
-#include "user.h"
-
-user testUser("test", "test", "test", "test", "test", 20);
 
 BloodBank::BloodBank(QWidget *parent)
     : QMainWindow(parent)
@@ -29,14 +28,23 @@ void BloodBank::changeStyleSheet(QString path)
 
 void BloodBank::on_loginBtn_clicked()
 {
-    QString emailEntered = ui->emailLineEdit->text();
-    QString passwordEnterd = ui->passwordLineEdit->text();
-    bool authinticate = testUser.login(emailEntered.toStdString(), passwordEnterd.toStdString());
-    if (authinticate == true) {
-        ui->label->setText("Successful");
+    if (ui->emailLineEdit->text().isEmpty() || ui->emailLineEdit->text().isEmpty()
+        || ui->buttonGroup->checkedButton() == NULL) {
+        ui->statusbar->showMessage("Please fill all the fields", 2000);
     } else {
-        ui->emailLineEdit->clear();
-        ui->passwordLineEdit->clear();
+        BloodBankClass read;
+        bool test = read.login(ui->emailLineEdit->text().toStdString(),
+                               ui->passwordLineEdit->text().toStdString(),
+                               ui->radioButton->isChecked());
+        if (test) {
+            ui->statusbar->showMessage("Successfully loggedin.", 2000);
+        } else {
+            ui->statusbar->showMessage("The email or password you've entered doesn't match any "
+                                       "accout. Sign up for an accout.",
+                                       4000);
+            ui->emailLineEdit->clear();
+            ui->passwordLineEdit->clear();
+        }
     }
 }
 
@@ -56,15 +64,25 @@ void BloodBank::on_forgotThePasswordBtn_2_clicked()
 
 void BloodBank::on_pushButton_clicked()
 {
-    changeStyleSheet("C:/Users/Ahmed/Documents/BB/Fibers.qss");
+    changeStyleSheet("Fibers.qss");
 }
 
 void BloodBank::on_pushButton_2_clicked()
 {
-    changeStyleSheet("C:/Users/Ahmed/Documents/BB/Darkeum.qss");
+    changeStyleSheet("Darkeum.qss");
 }
 
 void BloodBank::on_pushButton_3_clicked()
 {
-    changeStyleSheet("C:/Users/Ahmed/Documents/BB/Irrorater.qss");
+    changeStyleSheet("Irrorater.qss");
+}
+
+void BloodBank::on_pushButton_4_clicked()
+{
+    changeStyleSheet("Dark_Orange.qss");
+}
+
+void BloodBank::on_pushButton_5_clicked()
+{
+    this->setStyleSheet("");
 }
