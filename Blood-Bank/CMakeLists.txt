@@ -30,9 +30,6 @@ set(PROJECT_SOURCES
             bloodBankClass.cpp
             bloodClass.h
             bloodClass.cpp
-            bloodRequestPage.cpp
-            bloodRequestPage.h
-            bloodRequestPage.ui
             donorClass.h
             donorClass.cpp
             emailClass.h

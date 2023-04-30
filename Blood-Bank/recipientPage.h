@@ -2,21 +2,25 @@
 
 #include <QMainWindow>
 #include "ui_recipientPage.h"
-#include "bloodRequestPage.h"
+//#include "bloodRequestPage.h"
+#include "bloodBankClass.h"
 #include<Qlabel>
+QT_BEGIN_NAMESPACE
+namespace Ui { class recipientPage; }
+QT_END_NAMESPACE
 class recipientPage : public QMainWindow
 {
-	Q_OBJECT
+   Q_OBJECT
 
 public:
 	recipientPage(QWidget *parent = nullptr);
 	~recipientPage();
 
 private slots:
-	void on_requestBloodBtn_clicked();
+	void on_requestBtn_clicked();
 private:
-	Ui::recipientPageClass ui;
-	bloodRequestPage* p;
+	Ui::recipientPageClass *ui;
+	BloodBankClass b;
 	
 };
 
