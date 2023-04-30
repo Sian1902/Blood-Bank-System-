@@ -1,0 +1,26 @@
+# ninja log v5
+542	749	7045701884454570	Blood-Bank_autogen/EWIEGA46WW/qrc_resources.cpp	6e74d4bf575a1bb3
+16	459	7045703481488982	C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/timestamp	27de9dd273311211
+476	4020	7045703518363688	CMakeFiles/Blood-Bank.dir/signup.cpp.obj	a1663998dbc151fc
+7	1138	7045714491979328	build.ninja	a7b6c4d403b83d20
+16	459	7045703481488982	Blood-Bank_autogen/timestamp	27de9dd273311211
+862	2447	7045701902034785	CMakeFiles/Blood-Bank.dir/RecipientClass.cpp.obj	6bd14871aa0ae722
+6	29	0	CMakeFiles/clean.additional	baedbe210acaa455
+29	40	0	clean	9064569f19be7b9
+16	459	7045703481488982	Blood-Bank_autogen/mocs_compilation.cpp	27de9dd273311211
+16	459	7045703481488982	C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/mocs_compilation.cpp	27de9dd273311211
+542	749	7045701884454570	C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/EWIEGA46WW/qrc_resources.cpp	6e74d4bf575a1bb3
+870	1497	7045701892574406	CMakeFiles/Blood-Bank.dir/Blood-Bank_autogen/EWIEGA46WW/qrc_resources.cpp.obj	342b5ca4e83e8418
+774	2165	7045701899234333	CMakeFiles/Blood-Bank.dir/user.cpp.obj	fe1ea5086c077026
+833	2673	7045701904330555	CMakeFiles/Blood-Bank.dir/emailClass.cpp.obj	511b71a550ea834a
+817	2322	7045701900802972	CMakeFiles/Blood-Bank.dir/bloodClass.cpp.obj	e6e49357d1081131
+825	2433	7045701901918850	CMakeFiles/Blood-Bank.dir/donorClass.cpp.obj	cb9cec7ba42c5c12
+460	3598	7045703514178397	CMakeFiles/Blood-Bank.dir/Blood-Bank_autogen/mocs_compilation.cpp.obj	da31a03984edef6b
+852	2490	7045701902496204	CMakeFiles/Blood-Bank.dir/userClass.cpp.obj	4e879c60481c2078
+808	2893	7045701906501827	CMakeFiles/Blood-Bank.dir/bloodBankClass.cpp.obj	ad8ab8f9bcdba7cb
+758	3599	7045701913608776	CMakeFiles/Blood-Bank.dir/main.cpp.obj	a8c90f98a10bb59
+485	3589	7045703514062982	CMakeFiles/Blood-Bank.dir/forgotpassword.cpp.obj	e4ed05b2ca4f477
+467	4026	7045703518443736	CMakeFiles/Blood-Bank.dir/bloodbank.cpp.obj	3f1c11436bd8e4aa
+504	3595	7045703514143085	CMakeFiles/Blood-Bank.dir/recipientPage.cpp.obj	93d4002fc5bbd2fe
+495	3662	7045703514839556	CMakeFiles/Blood-Bank.dir/bloodRequestPage.cpp.obj	20cef9a5a70287a
+4026	4621	7045703524264560	Blood-Bank.exe	38cde0b6213b85a9
