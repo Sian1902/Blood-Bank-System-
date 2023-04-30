@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="BloodBankClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="BloodClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="bloodRequestPage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="DonorClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="EmailClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="RecipientClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="recipientPage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="UserClass.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BloodBankClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DonorClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EmailClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RecipientClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UserClass.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="bloodRequestPage.h">
+      <Filter>headers</Filter>
+    </QtMoc>
+    <QtMoc Include="recipientPage.h">
+      <Filter>headers</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="recipientPage.ui">
+      <Filter>forms</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{1a0309b8-0f0b-4209-bba2-494d1f150c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{26d8d3ab-ec6d-4056-b1e1-c7580223ab95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="forms">
+      <UniqueIdentifier>{e925d1ab-f743-40dd-b6c6-301809d38fd1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
