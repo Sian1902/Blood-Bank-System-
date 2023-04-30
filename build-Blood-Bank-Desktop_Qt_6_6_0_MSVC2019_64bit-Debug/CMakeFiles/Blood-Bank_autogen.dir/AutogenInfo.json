@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/haith/OneDrive/Documents/Blood-Bank",
+	"BUILD_DIR" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/haith/OneDrive/Documents/Blood-Bank/CMakeLists.txt",
-		"C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeSystem.cmake",
+		"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/CMakeLists.txt",
+		"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake",
-		"C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake",
+		"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake",
@@ -23,7 +23,7 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Platform/Windows-MSVC-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Platform/Windows-MSVC.cmake",
-		"C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake",
+		"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake",
 		"C:/Qt/6.6.0/msvc2019_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
@@ -263,95 +263,89 @@
 		"C:/Qt/6.6.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-debug.cmake",
 		"C:/Qt/6.6.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.6.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake",
-		"C:/Users/haith/OneDrive/Documents/Blood-Bank/resources.qrc"
+		"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/resources.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/haith/OneDrive/Documents/Blood-Bank",
-	"DEP_FILE" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank",
+	"DEP_FILE" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "Blood-Bank_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/RecipientClass.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/RecipientClass.h",
 			"MU",
 			"EWIEGA46WW/moc_RecipientClass.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodBankClass.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodBankClass.h",
 			"MU",
 			"EWIEGA46WW/moc_bloodBankClass.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodClass.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodClass.h",
 			"MU",
 			"EWIEGA46WW/moc_bloodClass.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodRequestPage.h",
-			"MU",
-			"EWIEGA46WW/moc_bloodRequestPage.cpp",
-			null
-		],
-		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodTypes.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodTypes.h",
 			"MU",
 			"EWIEGA46WW/moc_bloodTypes.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodbank.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodbank.h",
 			"MU",
 			"EWIEGA46WW/moc_bloodbank.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/donorClass.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorClass.h",
 			"MU",
 			"EWIEGA46WW/moc_donorClass.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/emailClass.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/emailClass.h",
 			"MU",
 			"EWIEGA46WW/moc_emailClass.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/forgotpassword.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/forgotpassword.h",
 			"MU",
 			"EWIEGA46WW/moc_forgotpassword.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/recipientPage.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/recipientPage.h",
 			"MU",
 			"EWIEGA46WW/moc_recipientPage.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/signup.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.h",
 			"MU",
 			"EWIEGA46WW/moc_signup.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/user.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.h",
 			"MU",
 			"EWIEGA46WW/moc_user.cpp",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/userClass.h",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/userClass.h",
 			"MU",
 			"EWIEGA46WW/moc_userClass.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -395,64 +389,71 @@
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/Blood-Bank_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/Blood-Bank_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.6.0/msvc2019_64/./bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.6.0/msvc2019_64/./bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 6,
-	"SETTINGS_FILE" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/Blood-Bank_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/Blood-Bank_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/RecipientClass.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/RecipientClass.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodBankClass.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodBankClass.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodClass.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodClass.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodRequestPage.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodbank.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodbank.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorClass.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/donorClass.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/emailClass.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/emailClass.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/forgotpassword.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/forgotpassword.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/main.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/haith/OneDrive/Documents/Blood-Bank/main.cpp", "MU", null ],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/recipientPage.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/recipientPage.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/haith/OneDrive/Documents/Blood-Bank/signup.cpp", "MU", null ],
-		[ "C:/Users/haith/OneDrive/Documents/Blood-Bank/user.cpp", "MU", null ],
 		[
-			"C:/Users/haith/OneDrive/Documents/Blood-Bank/userClass.cpp",
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/userClass.cpp",
 			"MU",
 			null
 		]

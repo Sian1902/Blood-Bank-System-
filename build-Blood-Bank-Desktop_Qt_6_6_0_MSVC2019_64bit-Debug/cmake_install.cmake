@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/haith/OneDrive/Documents/Blood-Bank
+# Install script for directory: C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/Blood-Bank.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -44,5 +44,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

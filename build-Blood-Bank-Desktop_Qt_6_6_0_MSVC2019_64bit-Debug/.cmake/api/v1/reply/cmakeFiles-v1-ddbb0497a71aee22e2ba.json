@@ -6,11 +6,11 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/.qtc/package-manager/auto-setup.cmake"
+			"path" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/.qtc/package-manager/auto-setup.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeSystem.cmake"
+			"path" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -19,7 +19,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
+			"path" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -83,7 +83,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake"
+			"path" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -1102,8 +1102,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/haith/OneDrive/Documents/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug",
-		"source" : "C:/Users/haith/OneDrive/Documents/Blood-Bank"
+		"build" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank"
 	},
 	"version" : 
 	{

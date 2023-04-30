@@ -4,7 +4,10 @@
 #include "./ui_bloodbank.h"
 #include "bloodBankClass.h"
 #include "forgotpassword.h"
+#include "recipientPage.h"
 #include "signup.h"
+
+recipientPage *f;
 
 BloodBank::BloodBank(QWidget *parent)
     : QMainWindow(parent)
@@ -36,8 +39,10 @@ void BloodBank::on_loginBtn_clicked()
         bool test = read.login(ui->emailLineEdit->text().toStdString(),
                                ui->passwordLineEdit->text().toStdString(),
                                ui->radioButton->isChecked());
-        if (test) {
-            ui->statusbar->showMessage("Successfully loggedin.", 2000);
+        if (test && ui->buttonGroup->checkedButton()->text() == "Recipient") {
+            this->hide();
+            f = new recipientPage(this);
+            f->show();
         } else {
             ui->statusbar->showMessage("The email or password you've entered doesn't match any "
                                        "accout. Sign up for an accout.",

@@ -15,6 +15,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -35,6 +36,10 @@ public:
     QLabel *name_3;
     QWidget *header_2;
     QWidget *header_3;
+    QWidget *requestPage;
+    QSpinBox *amountFeild;
+    QLabel *amount;
+    QPushButton *requestBtn;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -43,7 +48,11 @@ public:
     {
         if (recipientPageClass->objectName().isEmpty())
             recipientPageClass->setObjectName("recipientPageClass");
+        recipientPageClass->setEnabled(true);
         recipientPageClass->resize(600, 400);
+        recipientPageClass->setAnimated(true);
+        recipientPageClass->setTabShape(QTabWidget::Rounded);
+        recipientPageClass->setUnifiedTitleAndToolBarOnMac(false);
         centralWidget = new QWidget(recipientPageClass);
         centralWidget->setObjectName("centralWidget");
         name = new QLabel(centralWidget);
@@ -71,7 +80,7 @@ public:
         palette.setBrush(QPalette::Inactive, QPalette::Base, brush);
         palette.setBrush(QPalette::Inactive, QPalette::Window, brush);
         palette.setBrush(QPalette::Disabled, QPalette::Button, brush);
-        QBrush brush2(QColor(120, 120, 120, 255));
+        QBrush brush2(QColor(164, 166, 168, 96));
         brush2.setStyle(Qt::SolidPattern);
         palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush2);
         palette.setBrush(QPalette::Disabled, QPalette::Base, brush);
@@ -173,10 +182,64 @@ public:
         name_2->raise();
         name_3->raise();
         header_2->raise();
+        requestPage = new QWidget(centralWidget);
+        requestPage->setObjectName("requestPage");
+        requestPage->setGeometry(QRect(210, 60, 231, 181));
+        requestPage->setCursor(QCursor(Qt::ArrowCursor));
+        requestPage->setAutoFillBackground(false);
+        requestPage->setStyleSheet(QString::fromUtf8("background-color:#FF5252;\n"
+"border-radius:4px;\n"
+"\n"
+""));
+        amountFeild = new QSpinBox(requestPage);
+        amountFeild->setObjectName("amountFeild");
+        amountFeild->setGeometry(QRect(130, 70, 51, 31));
+        amountFeild->setStyleSheet(QString::fromUtf8("background-color:#FFFFFF;\n"
+""));
+        amount = new QLabel(requestPage);
+        amount->setObjectName("amount");
+        amount->setGeometry(QRect(40, 70, 61, 31));
+        amount->setFont(font);
+        amount->setStyleSheet(QString::fromUtf8("color:#FFFFFF"));
+        requestBtn = new QPushButton(requestPage);
+        requestBtn->setObjectName("requestBtn");
+        requestBtn->setGeometry(QRect(40, 130, 141, 41));
+        QPalette palette2;
+        palette2.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette2.setBrush(QPalette::Active, QPalette::ButtonText, brush1);
+        palette2.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::ButtonText, brush1);
+        palette2.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::ButtonText, brush2);
+        palette2.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::Window, brush);
+        requestBtn->setPalette(palette2);
+        requestBtn->setFont(font1);
+        requestBtn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #FF5252;\n"
+"     border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #7A0000;\n"
+"    border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: black;\n"
+"    border-radius: 10px;\n"
+"}\n"
+"\n"
+"\n"
+""));
         recipientPageClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(recipientPageClass);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 600, 26));
+        menuBar->setGeometry(QRect(0, 0, 600, 25));
         recipientPageClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(recipientPageClass);
         mainToolBar->setObjectName("mainToolBar");
@@ -186,6 +249,7 @@ public:
         recipientPageClass->setStatusBar(statusBar);
 
         retranslateUi(recipientPageClass);
+        QObject::connect(requestBloodBtn, &QPushButton::clicked, requestPage, qOverload<>(&QWidget::show));
 
         QMetaObject::connectSlotsByName(recipientPageClass);
     } // setupUi
@@ -200,6 +264,8 @@ public:
         bloodType->setText(QCoreApplication::translate("recipientPageClass", "Blood Type: B+", nullptr));
         name_2->setText(QCoreApplication::translate("recipientPageClass", "Welcome", nullptr));
         name_3->setText(QCoreApplication::translate("recipientPageClass", "Bank", nullptr));
+        amount->setText(QCoreApplication::translate("recipientPageClass", "# Bags", nullptr));
+        requestBtn->setText(QCoreApplication::translate("recipientPageClass", "Request Blood", nullptr));
     } // retranslateUi
 
 };

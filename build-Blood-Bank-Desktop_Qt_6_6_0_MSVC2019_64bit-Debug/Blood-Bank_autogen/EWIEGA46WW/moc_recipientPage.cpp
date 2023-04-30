@@ -40,14 +40,14 @@ namespace {
 struct qt_meta_stringdata_CLASSrecipientPageENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSrecipientPageENDCLASS = QtMocHelpers::stringData(
     "recipientPage",
-    "on_requestBloodBtn_clicked",
+    "on_requestBtn_clicked",
     ""
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSrecipientPageENDCLASS_t {
     uint offsetsAndSizes[6];
     char stringdata0[14];
-    char stringdata1[27];
+    char stringdata1[22];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
@@ -55,11 +55,11 @@ struct qt_meta_stringdata_CLASSrecipientPageENDCLASS_t {
 Q_CONSTINIT static const qt_meta_stringdata_CLASSrecipientPageENDCLASS_t qt_meta_stringdata_CLASSrecipientPageENDCLASS = {
     {
         QT_MOC_LITERAL(0, 13),  // "recipientPage"
-        QT_MOC_LITERAL(14, 26),  // "on_requestBloodBtn_clicked"
-        QT_MOC_LITERAL(41, 0)   // ""
+        QT_MOC_LITERAL(14, 21),  // "on_requestBtn_clicked"
+        QT_MOC_LITERAL(36, 0)   // ""
     },
     "recipientPage",
-    "on_requestBloodBtn_clicked",
+    "on_requestBtn_clicked",
     ""
 };
 #undef QT_MOC_LITERAL
@@ -97,7 +97,7 @@ Q_CONSTINIT const QMetaObject recipientPage::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSrecipientPageENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<recipientPage, std::true_type>,
-        // method 'on_requestBloodBtn_clicked'
+        // method 'on_requestBtn_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -109,7 +109,7 @@ void recipientPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         auto *_t = static_cast<recipientPage *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_requestBloodBtn_clicked(); break;
+        case 0: _t->on_requestBtn_clicked(); break;
         default: ;
         }
     }

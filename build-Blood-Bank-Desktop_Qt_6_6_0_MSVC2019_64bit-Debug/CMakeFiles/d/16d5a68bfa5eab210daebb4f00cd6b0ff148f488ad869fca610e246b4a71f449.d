@@ -331,41 +331,38 @@ Blood-Bank_autogen/timestamp: \
   C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Platform/Windows-MSVC.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Platform/Windows.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/CMakeLists.txt \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/RecipientClass.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/RecipientClass.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodBankClass.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodBankClass.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodClass.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodClass.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodRequestPage.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodRequestPage.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodTypes.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodbank.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodbank.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/donorClass.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/donorClass.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/emailClass.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/emailClass.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/forgotpassword.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/forgotpassword.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/main.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/recipientPage.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/recipientPage.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/resources.qrc \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/signup.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/signup.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/user.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/user.h \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/userClass.cpp \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/userClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/CMakeLists.txt \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/RecipientClass.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/RecipientClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodBankClass.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodBankClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodClass.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodTypes.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodbank.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodbank.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorClass.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/emailClass.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/emailClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/forgotpassword.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/forgotpassword.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/main.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/recipientPage.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/recipientPage.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/resources.qrc \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/userClass.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/userClass.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.24.2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.24.2/CMakeRCCompiler.cmake \
   CMakeFiles/3.24.2/CMakeSystem.cmake \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodRequestPage.ui \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/bloodbank.ui \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/forgotpassword.ui \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/recipientPage.ui \
-  C:/Users/haith/OneDrive/Documents/Blood-Bank/signup.ui \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodbank.ui \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/forgotpassword.ui \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/recipientPage.ui \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.ui \
   C:/Qt/Tools/CMake_64/bin/cmake.exe
