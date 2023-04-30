@@ -28,9 +28,6 @@
     <ClCompile Include="UserClass.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="signUp.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BloodBankClass.h">
@@ -59,18 +56,9 @@
     <QtMoc Include="recipientPage.h">
       <Filter>headers</Filter>
     </QtMoc>
-    <QtMoc Include="signUp.h">
-      <Filter>headers</Filter>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="bloodRequestPage.ui">
-      <Filter>forms</Filter>
-    </QtUic>
     <QtUic Include="recipientPage.ui">
-      <Filter>forms</Filter>
-    </QtUic>
-    <QtUic Include="signUp.ui">
       <Filter>forms</Filter>
     </QtUic>
   </ItemGroup>

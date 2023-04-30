@@ -1,15 +1,20 @@
 #include "recipientPage.h"
-#include "bloodRequestPage.h"
+//#include "bloodRequestPage.h"
+#include "bloodBankClass.h"
 #include <QLabel>
 recipientPage::recipientPage(QWidget *parent)
 	: QMainWindow(parent)
+	, ui(new Ui::recipientPageClass)
 {
-	ui.setupUi(this);
+	ui->setupUi(this);
+
 }
 recipientPage::~recipientPage()
 {}
-void recipientPage::on_requestBloodBtn_clicked() {
+void recipientPage::on_requestBtn_clicked() {
+	
+	QString amount = ui->amountFeild->text();
 
-	p = new bloodRequestPage(this);
-	p ->show();
+	b.requestBlood(stoi(amount.toStdString()));
+	
 }

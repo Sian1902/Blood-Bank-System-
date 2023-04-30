@@ -90,7 +90,6 @@
     <ClCompile Include="EmailClass.cpp" />
     <ClCompile Include="RecipientClass.cpp" />
     <ClCompile Include="recipientPage.cpp" />
-    <ClCompile Include="signUp.cpp" />
     <ClCompile Include="UserClass.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -102,13 +101,10 @@
     <ClInclude Include="EmailClass.h" />
     <ClInclude Include="RecipientClass.h" />
     <QtMoc Include="recipientPage.h" />
-    <QtMoc Include="signUp.h" />
     <ClInclude Include="UserClass.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="bloodRequestPage.ui" />
     <QtUic Include="recipientPage.ui" />
-    <QtUic Include="signUp.ui" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
