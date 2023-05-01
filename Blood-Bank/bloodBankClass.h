@@ -43,7 +43,8 @@ class BloodBankClass
 	unordered_map<string, RecipientClass> recipientsDataMap;
 	//static int numOfHospitals;
 public:
-	string currEmail;
+    static inline BloodBankClass *bbc;
+    string currEmail;
 	//BloodBankClass();
 	bool Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string Hospital, string doctorOfTheCase);;
 	bool  login(string email, string password, bool isDonor);

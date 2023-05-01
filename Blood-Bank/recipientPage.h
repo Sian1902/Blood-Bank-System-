@@ -13,8 +13,8 @@ class recipientPage : public QMainWindow
    Q_OBJECT
 
 public:
-	recipientPage(QWidget *parent = nullptr);
-	~recipientPage();
+    recipientPage(BloodBankClass *z, QWidget *parent = nullptr);
+    ~recipientPage();
 
 private slots:
 	void on_requestBtn_clicked();

@@ -1,19 +1,26 @@
 #include "recipientPage.h"
-#include "bloodBankClass.h"
 #include <QLabel>
-recipientPage::recipientPage(QWidget *parent)
-	: QMainWindow(parent)
-	, ui(new Ui::recipientPageClass)
+#include "bloodBankClass.h"
+recipientPage::recipientPage(BloodBankClass *z, QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::recipientPageClass)
 {
 	ui->setupUi(this);
-
+    BloodBankClass::bbc = z;
+    ui->updateDataPage->hide();
+    ui->requestPage->hide();
 }
 recipientPage::~recipientPage()
 {}
 void recipientPage::on_requestBtn_clicked() {
-
     QString amount = ui->amountFeild->text();
 
-    b.requestBlood(stoi(amount.toStdString()));
-	
+    if(! b.requestBlood(stoi(amount.toStdString()))){
+        ui->reqStatus->setText("Request failed");
+
+    }
+    else{
+        ui->requestPage->hide();
+    }
+
 }
