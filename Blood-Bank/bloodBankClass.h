@@ -12,6 +12,7 @@
 using namespace std;
 class BloodBankClass
 {
+
 	struct donor {
 		time_t birthDate;
 		string id;
@@ -38,12 +39,25 @@ class BloodBankClass
 		string donorBloodType;
 		time_t donationDate;
 	};
-	unordered_map<string, queue<BloodClass>> bloodDataMap;
-	unordered_map<string, DonorClass> donorsDataMap;
-	unordered_map<string, RecipientClass> recipientsDataMap;
+    BloodBankClass();
+
 	//static int numOfHospitals;
 public:
+<<<<<<< Updated upstream
 	string currEmail;
+=======
+    unordered_map<string, queue<BloodClass>> bloodDataMap;
+    unordered_map<string, DonorClass> donorsDataMap;
+    unordered_map<string, RecipientClass> recipientsDataMap;
+    static BloodBankClass& getobject(){
+        static BloodBankClass object;
+        return object;
+    }
+    BloodBankClass(const BloodBankClass&) = delete;
+//    BloodBankClass& operator=(const BloodBankClass&) = delete;
+
+    string currEmail;
+>>>>>>> Stashed changes
 	//BloodBankClass();
 	bool Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string Hospital, string doctorOfTheCase);;
 	bool  login(string email, string password, bool isDonor);
@@ -60,6 +74,6 @@ public:
 	void readDonors(unordered_map<string, DonorClass>& donorsDataMap);
 	void readBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap);
 	void readRecipients(unordered_map<string, RecipientClass>& recipientsDataMap);
-	BloodBankClass();
+
 	~BloodBankClass();
 };

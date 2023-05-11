@@ -44,7 +44,7 @@ void SignUp::on_pushButton_2_clicked()
                                      "Missing information",
                                      "Please fill the name of the doctor and the disease");
             } else {
-                BloodBankClass write;
+
                 qint64 timeOfBirth = ui->dateEdit->dateTime().toSecsSinceEpoch();
                 string name = ui->lineEdit->text().toStdString();
                 name.erase(std::remove_if(name.begin(), name.end(), ::isspace), name.end());
@@ -58,7 +58,7 @@ void SignUp::on_pushButton_2_clicked()
                 string email = ui->lineEdit_2->text().toStdString();
                 email.erase(std::remove_if(email.begin(), email.end(), ::isspace), email.end());
                 bool checkRecipient
-                    = write.Regestration(name,
+                    = BloodBankClass::getobject().Regestration(name,
                                          ID,
                                          email,
                                          password,
@@ -81,7 +81,7 @@ void SignUp::on_pushButton_2_clicked()
                                          "Inappropriate age",
                                          "Your age is too young to donate blood");
                 } else {
-                    BloodBankClass write;
+
                     qint64 timeOfBirth = ui->dateEdit->dateTime().toSecsSinceEpoch();
                     qint64 timeOfLastDonation = ui->dateEdit_2->dateTime().toSecsSinceEpoch();
                     string name = ui->lineEdit->text().toStdString();
@@ -94,7 +94,7 @@ void SignUp::on_pushButton_2_clicked()
                     string email = ui->lineEdit_2->text().toStdString();
                     email.erase(std::remove_if(email.begin(), email.end(), ::isspace), email.end());
                     bool checkDonor
-                        = write.Regestration(name,
+                        = BloodBankClass::getobject().Regestration(name,
                                              ID,
                                              email,
                                              password,

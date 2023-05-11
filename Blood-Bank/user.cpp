@@ -25,6 +25,7 @@ bool user::login(string email, string password)
     if (email == this->getMail() && password == this->getPassword()) {
         return true;
     }
+
 }
 
 void user::updateAccount() {}
@@ -88,5 +89,5 @@ string user::getBloodType()
 
 int user::getAge()
 {
-    return age;
+    return  age;
 }

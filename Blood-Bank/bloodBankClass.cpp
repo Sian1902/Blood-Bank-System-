@@ -28,23 +28,24 @@ bool BloodBankClass::Regestration(string name, string id, string email, string p
 }
 bool BloodBankClass::login(string email, string password, bool isDonor)
 {
-	if (isDonor) {
-		if (donorsDataMap.count(email)) {
-			if (donorsDataMap[email].getPassword() == password) {
-				currEmail = email;
-				return true;
-			}
-		}
-	}
-	else {
-		if (recipientsDataMap.count(email)) {
-			if (recipientsDataMap[email].getPassword() == password) {
-				currEmail = email;
-				return true;
-			}
-		}
-	}
-	return false;
+
+    if (isDonor) {
+        if (donorsDataMap.count(email)) {
+            if (donorsDataMap[email].getPassword() == password) {
+                currEmail = email;
+                return true;
+            }
+        }
+    }
+    else {
+        if (recipientsDataMap.count(email)) {
+            if (recipientsDataMap[email].getPassword() == password) {
+                currEmail = email;
+                return true;
+            }
+       }
+    }
+   return false;
 }
 void BloodBankClass::deleteDonor()
 {
@@ -235,3 +236,4 @@ BloodBankClass::~BloodBankClass()
     writeDonors(donorsDataMap);
     writeRecipients(recipientsDataMap);
 }
+

@@ -13,14 +13,22 @@ class recipientPage : public QMainWindow
    Q_OBJECT
 
 public:
+<<<<<<< Updated upstream
 	recipientPage(QWidget *parent = nullptr);
 	~recipientPage();
+=======
+    recipientPage( QWidget *parent = nullptr);
+    ~recipientPage();
+   // void feildSetter();
+>>>>>>> Stashed changes
 
 private slots:
-	void on_requestBtn_clicked();
+    void on_requestBtn_clicked();
+
+
+    void on_deleteBtn_clicked();
+
 private:
 	Ui::recipientPageClass *ui;
-	BloodBankClass b;
-	
 };
 

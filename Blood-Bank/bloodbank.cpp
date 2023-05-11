@@ -11,6 +11,7 @@ BloodBank::BloodBank(QWidget *parent)
     , ui(new Ui::BloodBank)
 {
     ui->setupUi(this);
+
 }
 
 BloodBank::~BloodBank()
@@ -32,12 +33,23 @@ void BloodBank::on_loginBtn_clicked()
         || ui->buttonGroup->checkedButton() == NULL) {
         ui->statusbar->showMessage("Please fill all the fields", 2000);
     } else {
+<<<<<<< Updated upstream
         BloodBankClass read;
         bool test = read.login(ui->emailLineEdit->text().toStdString(),
                                ui->passwordLineEdit->text().toStdString(),
                                ui->radioButton->isChecked());
         if (test) {
             ui->statusbar->showMessage("Successfully loggedin.", 2000);
+=======
+
+        bool test = BloodBankClass::getobject().login(ui->emailLineEdit->text().toStdString(),
+                                ui->passwordLineEdit->text().toStdString(),
+                                ui->radioButton->isChecked());
+        if (test && ui->buttonGroup->checkedButton()->text() == "Recipient") {
+            this->hide();
+            f = new recipientPage( this);
+            f->show();
+>>>>>>> Stashed changes
         } else {
             ui->statusbar->showMessage("The email or password you've entered doesn't match any "
                                        "accout. Sign up for an accout.",
