@@ -61,6 +61,8 @@ public:
 	void readDonors(unordered_map<string, DonorClass>& donorsDataMap);
 	void readBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap);
 	void readRecipients(unordered_map<string, RecipientClass>& recipientsDataMap);
+    void writeData();
 	BloodBankClass();
 	~BloodBankClass();
+
 };
