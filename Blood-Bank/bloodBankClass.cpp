@@ -238,3 +238,10 @@ BloodBankClass::~BloodBankClass()
     writeRecipients(recipientsDataMap);
     qDebug() << "destructor is called";
 }
+RecipientClass& BloodBankClass::getRecipient(){
+    return  recipientsDataMap[currEmail];
+}
+DonorClass& BloodBankClass::getDonor()
+{
+    return donorsDataMap[currEmail];
+}

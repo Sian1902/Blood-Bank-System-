@@ -41,10 +41,11 @@ class BloodBankClass
 	unordered_map<string, queue<BloodClass>> bloodDataMap;
 	unordered_map<string, DonorClass> donorsDataMap;
 	unordered_map<string, RecipientClass> recipientsDataMap;
+     string currEmail;
 	//static int numOfHospitals;
 public:
     static inline BloodBankClass *bbc;
-    string currEmail;
+
 	//BloodBankClass();
 	bool Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string Hospital, string doctorOfTheCase);;
 	bool  login(string email, string password, bool isDonor);
@@ -61,6 +62,8 @@ public:
 	void readDonors(unordered_map<string, DonorClass>& donorsDataMap);
 	void readBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap);
 	void readRecipients(unordered_map<string, RecipientClass>& recipientsDataMap);
+    RecipientClass& getRecipient();
+    DonorClass& getDonor();
 	BloodBankClass();
 	~BloodBankClass();
 };

@@ -1111,6 +1111,11 @@ QPushButton:pressed {
        <height>28</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+      </font>
+     </property>
      <property name="readOnly">
       <bool>false</bool>
      </property>
@@ -1618,7 +1623,7 @@ QPushButton:pressed {
       <string>Delete </string>
      </property>
     </widget>
-    <widget class="QPushButton" name="deleteBtn_2">
+    <widget class="QPushButton" name="log_out">
      <property name="geometry">
       <rect>
        <x>450</x>
@@ -1782,7 +1787,7 @@ QPushButton:pressed {
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

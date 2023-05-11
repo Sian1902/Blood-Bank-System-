@@ -1,7 +1,9 @@
 #include "recipientPage.h"
 #include <QDebug>
+#include <QString>
 #include <QLabel>
-#include "bloodBankClass.h"
+#include<string>
+#include "qevent.h"
 recipientPage::recipientPage(BloodBankClass *z, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::recipientPageClass)
@@ -10,13 +12,23 @@ recipientPage::recipientPage(BloodBankClass *z, QWidget *parent)
     BloodBankClass::bbc = z;
     ui->updateDataPage->hide();
     ui->requestPage->hide();
+    ui->age->setText("Age: "+QString::fromStdString(to_string(BloodBankClass::bbc->getRecipient().getAge())));
+    ui->name->setText("Name: "+QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
+    ui->bloodType->setText("Blood Type: "+QString::fromStdString(BloodBankClass::bbc->getRecipient().getBloodType()));
+    ui->bloodTypeFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getBloodType()));
+    ui->emailFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getMail()));
+    ui->doctorFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getDoctorOftheCase()));
+    ui->hospitalFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getHospital()));
+    ui->nameFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
+    ui->passwordFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getPassword()));
+
 }
 recipientPage::~recipientPage()
 {}
 void recipientPage::on_requestBtn_clicked() {
     QString amount = ui->amountFeild->text();
 
-    if(! b.requestBlood(stoi(amount.toStdString()))){
+    if(! BloodBankClass::bbc->requestBlood(stoi(amount.toStdString()))){
         ui->reqStatus->setText("Request failed");
 
     }
@@ -25,3 +37,50 @@ void recipientPage::on_requestBtn_clicked() {
     }
 
 }
+
+void recipientPage::on_updateBtn_clicked()
+{
+    BloodBankClass::bbc->getRecipient().setDoctorOftheCase(ui->doctorFeild->text().toStdString());
+    BloodBankClass::bbc->getRecipient().setHospital(ui->hospitalFeild->text().toStdString());
+    BloodBankClass::bbc->getRecipient().setName(ui->nameFeild->text().toStdString());
+    BloodBankClass::bbc->getRecipient().setPassword(ui->passwordFeild->text().toStdString());
+}
+
+void recipientPage::closeEvent(QCloseEvent *event)
+{
+    BloodBankClass::bbc->~BloodBankClass();
+    event->accept();
+}
+
+void recipientPage::on_cancelEditBtn_clicked()
+{
+    ui->age->setText("Age: "+QString::fromStdString(to_string(BloodBankClass::bbc->getRecipient().getAge())));
+    ui->name->setText("Name: "+QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
+    ui->doctorFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getDoctorOftheCase()));
+    ui->hospitalFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getHospital()));
+    ui->nameFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
+    ui->passwordFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getPassword()));
+}
+
+
+void recipientPage::on_deleteBtn_clicked()
+{
+    BloodBankClass::bbc->deleteRecipient();
+    this->hide();
+    loginPage= new BloodBank(this);
+    loginPage->show();
+
+}
+
+
+
+
+
+void recipientPage::on_log_out_clicked()
+{
+    this->hide();
+    loginPage= new BloodBank(this);
+    loginPage->show();
+
+}
+
