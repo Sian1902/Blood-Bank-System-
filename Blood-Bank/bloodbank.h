@@ -39,7 +39,8 @@ private slots:
 
 private:
     Ui::BloodBank *ui;
-BloodBankClass *read = new BloodBankClass();
+    SignUp *w;
+    ForgotPassword *wf;
 };
 
 #endif // BLOODBANK_H

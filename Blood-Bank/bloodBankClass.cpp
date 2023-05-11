@@ -7,11 +7,6 @@
 #include <time.h>
 #include <vector>
 using namespace std;
-void BloodBankClass::writeData(){
-    void writeDonors(unordered_map<string, DonorClass>& donorsDataMap);
-    void writeBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap);
-    void writeRecipients(unordered_map<string, RecipientClass>& recipientsDataMap);
-}
 bool BloodBankClass::Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType, string hospital, string doctorOfTheCase)
 {
 	RecipientClass temp;

@@ -8,14 +8,13 @@
 
 BloodBank *w;
 
-SignUp::SignUp(BloodBankClass* z,QWidget *parent)
+SignUp::SignUp(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::SignUp)
 {
     ui->setupUi(this);
     ui->widget->hide();
     ui->widget_2->hide();
-    BloodBankClass::bbc=z;
 }
 
 SignUp::~SignUp()
@@ -45,6 +44,7 @@ void SignUp::on_pushButton_2_clicked()
                                      "Missing information",
                                      "Please fill the name of the doctor and the disease");
             } else {
+                BloodBankClass write;
                 qint64 timeOfBirth = ui->dateEdit->dateTime().toSecsSinceEpoch();
                 string name = ui->lineEdit->text().toStdString();
                 name.erase(std::remove_if(name.begin(), name.end(), ::isspace), name.end());
@@ -58,7 +58,7 @@ void SignUp::on_pushButton_2_clicked()
                 string email = ui->lineEdit_2->text().toStdString();
                 email.erase(std::remove_if(email.begin(), email.end(), ::isspace), email.end());
                 bool checkRecipient
-                    = BloodBankClass::bbc->Regestration(name,
+                    = write.Regestration(name,
                                          ID,
                                          email,
                                          password,
@@ -81,7 +81,7 @@ void SignUp::on_pushButton_2_clicked()
                                          "Inappropriate age",
                                          "Your age is too young to donate blood");
                 } else {
-
+                    BloodBankClass write;
                     qint64 timeOfBirth = ui->dateEdit->dateTime().toSecsSinceEpoch();
                     qint64 timeOfLastDonation = ui->dateEdit_2->dateTime().toSecsSinceEpoch();
                     string name = ui->lineEdit->text().toStdString();
@@ -94,7 +94,7 @@ void SignUp::on_pushButton_2_clicked()
                     string email = ui->lineEdit_2->text().toStdString();
                     email.erase(std::remove_if(email.begin(), email.end(), ::isspace), email.end());
                     bool checkDonor
-                        = BloodBankClass::bbc->Regestration(name,
+                        = write.Regestration(name,
                                              ID,
                                              email,
                                              password,
@@ -102,7 +102,6 @@ void SignUp::on_pushButton_2_clicked()
                                              ui->buttonGroup_2->checkedButton()->text().toStdString(),
                                              ui->buttonGroup->checkedButton()->text().toStdString(),
                                              timeOfLastDonation);
-
                 }
             } else {
                 QMessageBox::warning(this, "Disease detected", "Sorry, you can NOT signup");

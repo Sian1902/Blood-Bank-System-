@@ -42,8 +42,6 @@ set(PROJECT_SOURCES
             RecipientClass.h
             RecipientClass.cpp
             bloodTypes.h
-            handler.h
-            handler.cpp
 
 )
 

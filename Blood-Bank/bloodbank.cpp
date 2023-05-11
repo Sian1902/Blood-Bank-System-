@@ -8,8 +8,7 @@
 #include "signup.h"
 
 recipientPage *f;
-SignUp *w;
-ForgotPassword *wf;
+
 BloodBank::BloodBank(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::BloodBank)
@@ -36,7 +35,7 @@ void BloodBank::on_loginBtn_clicked()
         || ui->buttonGroup->checkedButton() == NULL) {
         ui->statusbar->showMessage("Please fill all the fields", 2000);
     } else {
-
+        BloodBankClass *read = new BloodBankClass();
         bool test = read->login(ui->emailLineEdit->text().toStdString(),
                                 ui->passwordLineEdit->text().toStdString(),
                                 ui->radioButton->isChecked());
@@ -57,7 +56,7 @@ void BloodBank::on_loginBtn_clicked()
 void BloodBank::on_forgotThePasswordBtn_clicked()
 {
     this->hide();
-    w = new SignUp(read,this);
+    w = new SignUp(this);
     w->show();
 }
 
