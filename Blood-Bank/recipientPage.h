@@ -19,8 +19,6 @@ public:
 private slots:
 	void on_requestBtn_clicked();
 private:
-	Ui::recipientPageClass *ui;
-	BloodBankClass b;
-	
+    Ui::recipientPageClass *ui;
+    BloodBankClass b;
 };
-

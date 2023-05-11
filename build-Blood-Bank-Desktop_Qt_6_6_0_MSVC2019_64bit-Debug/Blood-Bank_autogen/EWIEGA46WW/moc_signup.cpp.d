@@ -140,4 +140,11 @@ C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/build-Blood-Bank-Desktop_Qt_6
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qwidget.h
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qwidget.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/BloodClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/BloodTypes.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/DonorClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/EmailClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/RecipientClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/UserClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodBankClass.h

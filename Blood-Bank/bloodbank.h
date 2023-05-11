@@ -2,6 +2,7 @@
 #ifndef BLOODBANK_H
 #define BLOODBANK_H
 
+#include <QCloseEvent>
 #include <QMainWindow>
 #include "forgotpassword.h"
 #include "signup.h"
@@ -37,10 +38,10 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void closeEvent(QCloseEvent *event);
+
 private:
     Ui::BloodBank *ui;
-    SignUp *w;
-    ForgotPassword *wf;
 };
 
 #endif // BLOODBANK_H

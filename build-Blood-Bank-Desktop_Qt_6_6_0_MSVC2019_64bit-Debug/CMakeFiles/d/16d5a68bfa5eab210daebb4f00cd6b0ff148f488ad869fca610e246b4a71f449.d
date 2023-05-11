@@ -1,4 +1,9 @@
 Blood-Bank_autogen/timestamp: \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QList \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QObject \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QRect \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QSize \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QSizeF \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q23utility.h \
@@ -26,6 +31,7 @@ Blood-Bank_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qcontainerinfo.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qcontainertools_impl.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qcontiguouscache.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qcoreevent.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdatastream.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdebug.h \
@@ -55,6 +61,7 @@ Blood-Bank_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qmetatype.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qminmax.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qnamespace.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qnativeinterface.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qnumeric.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qobject.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qobject_impl.h \
@@ -63,6 +70,7 @@ Blood-Bank_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qoverload.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpair.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpoint.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpointer.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qrect.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qrefcount.h \
@@ -111,31 +119,40 @@ Blood-Bank_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qxptype_traits.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/QCloseEvent \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/QTransform \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qaction.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qbitmap.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qbrush.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qcolor.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qcursor.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/qevent.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/qeventpoint.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qfont.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qfontinfo.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qfontmetrics.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qicon.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qimage.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/qinputdevice.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qpalette.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qpicture.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qpixmap.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/qpointingdevice.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qpolygon.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qregion.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qrgb.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/qscreen.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qtransform.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/qvector2d.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtGui/qvectornd.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QDialog \
