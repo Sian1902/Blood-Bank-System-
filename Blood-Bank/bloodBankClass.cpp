@@ -1,4 +1,5 @@
 #include "BloodBankClass.h"
+#include <QDebug>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
@@ -227,6 +228,7 @@ BloodBankClass::BloodBankClass()
 	readBlood(bloodDataMap);
     readDonors(donorsDataMap);
 	readRecipients(recipientsDataMap);
+    qDebug() << "constructor is called";
 }
 
 BloodBankClass::~BloodBankClass()
@@ -234,4 +236,5 @@ BloodBankClass::~BloodBankClass()
     writeBlood(bloodDataMap);
     writeDonors(donorsDataMap);
     writeRecipients(recipientsDataMap);
+    qDebug() << "destructor is called";
 }

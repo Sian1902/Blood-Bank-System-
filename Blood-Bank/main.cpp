@@ -1,4 +1,5 @@
 #include <QApplication>
+#include "bloodBankClass.h"
 #include "bloodbank.h"
 
 int main(int argc, char *argv[])

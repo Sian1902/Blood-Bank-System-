@@ -1,4 +1,5 @@
 #include "recipientPage.h"
+#include <QDebug>
 #include <QLabel>
 #include "bloodBankClass.h"
 recipientPage::recipientPage(BloodBankClass *z, QWidget *parent)
