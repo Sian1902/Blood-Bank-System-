@@ -9,14 +9,13 @@
 
 BloodBank *w;
 
-SignUp::SignUp(BloodBankClass *z, QWidget *parent)
+SignUp::SignUp(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::SignUp)
 {
     ui->setupUi(this);
     ui->widget->hide();
     ui->widget_2->hide();
-    BloodBankClass::bbc = z;
 }
 
 SignUp::~SignUp()

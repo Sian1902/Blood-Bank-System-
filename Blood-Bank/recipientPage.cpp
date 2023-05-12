@@ -4,12 +4,11 @@
 #include <QLabel>
 #include<string>
 #include "qevent.h"
-recipientPage::recipientPage(BloodBankClass *z, QWidget *parent)
+recipientPage::recipientPage(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::recipientPageClass)
 {
 	ui->setupUi(this);
-    BloodBankClass::bbc = z;
     ui->updateDataPage->hide();
     ui->requestPage->hide();
     ui->age->setText("Age: "+QString::fromStdString(to_string(BloodBankClass::bbc->getRecipient().getAge())));

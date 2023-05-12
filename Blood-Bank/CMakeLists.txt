@@ -42,7 +42,9 @@ set(PROJECT_SOURCES
             RecipientClass.h
             RecipientClass.cpp
             bloodTypes.h
-
+            donorpage.h
+            donorpage.cpp
+            donorpage.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

@@ -3,14 +3,16 @@
 #include <QFile>
 #include "./ui_bloodbank.h"
 #include "bloodBankClass.h"
+#include "donorpage.h"
 #include "forgotpassword.h"
 #include "recipientPage.h"
 #include "signup.h"
 
 BloodBankClass *read = new BloodBankClass();
-recipientPage *f;
-SignUp *w;
-ForgotPassword *wf;
+recipientPage *recPage;
+SignUp *signupPage;
+ForgotPassword *forgotpasswordPage;
+DonorPage *donorPage;
 
 BloodBank::BloodBank(QWidget *parent)
     : QMainWindow(parent)
@@ -39,13 +41,17 @@ void BloodBank::on_loginBtn_clicked()
         || ui->buttonGroup->checkedButton() == NULL) {
         ui->statusbar->showMessage("Please fill all the fields", 2000);
     } else {
-        bool test = read->login(ui->emailLineEdit->text().toStdString(),
-                                ui->passwordLineEdit->text().toStdString(),
-                                ui->radioButton->isChecked());
+        bool test = BloodBankClass::bbc->login(ui->emailLineEdit->text().toStdString(),
+                                               ui->passwordLineEdit->text().toStdString(),
+                                               ui->radioButton->isChecked());
         if (test && ui->buttonGroup->checkedButton()->text() == "Recipient") {
             this->hide();
-            f = new recipientPage(read, this);
-            f->show();
+            recPage = new recipientPage(this);
+            recPage->show();
+        } else if (test && ui->buttonGroup->checkedButton()->text() == "Donor") {
+            this->hide();
+            donorPage = new DonorPage(this);
+            donorPage->show();
         } else {
             ui->statusbar->showMessage("The email or password you've entered doesn't match any "
                                        "accout. Sign up for an accout.",
@@ -59,15 +65,15 @@ void BloodBank::on_loginBtn_clicked()
 void BloodBank::on_forgotThePasswordBtn_clicked()
 {
     this->hide();
-    w = new SignUp(read, this);
-    w->show();
+    signupPage = new SignUp(this);
+    signupPage->show();
 }
 
 void BloodBank::on_forgotThePasswordBtn_2_clicked()
 {
     this->hide();
-    wf = new ForgotPassword(this);
-    wf->show();
+    forgotpasswordPage = new ForgotPassword(this);
+    forgotpasswordPage->show();
 }
 
 void BloodBank::on_pushButton_clicked()

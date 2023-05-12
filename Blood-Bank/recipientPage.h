@@ -14,7 +14,7 @@ class recipientPage : public QMainWindow
    Q_OBJECT
 
 public:
-    recipientPage(BloodBankClass *z, QWidget *parent = nullptr);
+    recipientPage(QWidget *parent = nullptr);
     ~recipientPage();
 
 private slots:

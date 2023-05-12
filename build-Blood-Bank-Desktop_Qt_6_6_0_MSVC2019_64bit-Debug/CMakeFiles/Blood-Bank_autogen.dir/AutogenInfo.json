@@ -307,6 +307,12 @@
 			null
 		],
 		[
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorpage.h",
+			"MU",
+			"EWIEGA46WW/moc_donorpage.cpp",
+			null
+		],
+		[
 			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/emailClass.h",
 			"MU",
 			"EWIEGA46WW/moc_emailClass.cpp",
@@ -419,6 +425,11 @@
 		],
 		[
 			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorClass.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorpage.cpp",
 			"MU",
 			null
 		],

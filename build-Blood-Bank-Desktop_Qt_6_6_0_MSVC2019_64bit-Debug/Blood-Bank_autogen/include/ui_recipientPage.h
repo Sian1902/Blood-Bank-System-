@@ -62,7 +62,7 @@ public:
     QPushButton *updateBtn;
     QPushButton *cancelEditBtn;
     QPushButton *deleteBtn;
-    QPushButton *deleteBtn_2;
+    QPushButton *log_out;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -358,6 +358,9 @@ public:
         passwordFeild = new QLineEdit(updateDataPage);
         passwordFeild->setObjectName("passwordFeild");
         passwordFeild->setGeometry(QRect(440, 80, 141, 28));
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Times New Roman")});
+        passwordFeild->setFont(font2);
         passwordFeild->setReadOnly(false);
         bloodTypeFeild = new QLineEdit(updateDataPage);
         bloodTypeFeild->setObjectName("bloodTypeFeild");
@@ -473,9 +476,9 @@ public:
 "\n"
 "\n"
 ""));
-        deleteBtn_2 = new QPushButton(updateDataPage);
-        deleteBtn_2->setObjectName("deleteBtn_2");
-        deleteBtn_2->setGeometry(QRect(450, 230, 101, 31));
+        log_out = new QPushButton(updateDataPage);
+        log_out->setObjectName("log_out");
+        log_out->setGeometry(QRect(450, 230, 101, 31));
         QPalette palette7;
         palette7.setBrush(QPalette::Active, QPalette::Button, brush);
         palette7.setBrush(QPalette::Active, QPalette::ButtonText, brush1);
@@ -489,9 +492,9 @@ public:
         palette7.setBrush(QPalette::Disabled, QPalette::ButtonText, brush2);
         palette7.setBrush(QPalette::Disabled, QPalette::Base, brush);
         palette7.setBrush(QPalette::Disabled, QPalette::Window, brush);
-        deleteBtn_2->setPalette(palette7);
-        deleteBtn_2->setFont(font1);
-        deleteBtn_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        log_out->setPalette(palette7);
+        log_out->setFont(font1);
+        log_out->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #FF5252 ;\n"
 "     border-radius: 10px;\n"
 "}\n"
@@ -511,7 +514,7 @@ public:
         recipientPageClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(recipientPageClass);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 600, 26));
+        menuBar->setGeometry(QRect(0, 0, 600, 25));
         recipientPageClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(recipientPageClass);
         mainToolBar->setObjectName("mainToolBar");
@@ -553,7 +556,7 @@ public:
         updateBtn->setText(QCoreApplication::translate("recipientPageClass", "update", nullptr));
         cancelEditBtn->setText(QCoreApplication::translate("recipientPageClass", "cancel", nullptr));
         deleteBtn->setText(QCoreApplication::translate("recipientPageClass", "Delete ", nullptr));
-        deleteBtn_2->setText(QCoreApplication::translate("recipientPageClass", "Log Out", nullptr));
+        log_out->setText(QCoreApplication::translate("recipientPageClass", "Log Out", nullptr));
     } // retranslateUi
 
 };

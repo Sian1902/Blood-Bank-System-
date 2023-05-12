@@ -360,6 +360,8 @@ Blood-Bank_autogen/timestamp: \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodbank.h \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorClass.cpp \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorClass.h \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorpage.cpp \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorpage.h \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/emailClass.cpp \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/emailClass.h \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/forgotpassword.cpp \
@@ -379,6 +381,7 @@ Blood-Bank_autogen/timestamp: \
   CMakeFiles/3.24.2/CMakeRCCompiler.cmake \
   CMakeFiles/3.24.2/CMakeSystem.cmake \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/bloodbank.ui \
+  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/donorpage.ui \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/forgotpassword.ui \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/recipientPage.ui \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.ui \
