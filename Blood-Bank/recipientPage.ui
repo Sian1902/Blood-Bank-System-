@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>455</height>
+    <width>1181</width>
+    <height>807</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1780,13 +1780,73 @@ QPushButton:pressed {
      </property>
     </widget>
    </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>390</y>
+      <width>381</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>TYPE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DOE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DOE</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>620</y>
+      <width>281</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display fuching random data</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>320</y>
+      <width>48</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
+     <width>1181</width>
      <height>25</height>
     </rect>
    </property>

@@ -20,7 +20,7 @@ recipientPage::recipientPage(QWidget *parent)
     ui->hospitalFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getHospital()));
     ui->nameFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
     ui->passwordFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getPassword()));
-
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 }
 recipientPage::~recipientPage()
 {}
@@ -80,6 +80,24 @@ void recipientPage::on_log_out_clicked()
     this->hide();
     loginPage= new BloodBank(this);
     loginPage->show();
-
 }
-
+// ##################################################### create data ##########################3
+void recipientPage::on_pushButton_clicked()
+{
+    int rowsSize = ui->spinBox->value();
+    ui->tableWidget->setRowCount(rowsSize);
+    for (int i = 0; i < rowsSize; ++i) {
+        ui->tableWidget->setItem(i, 0, new QTableWidgetItem(QString("type")));
+        ui->tableWidget->setItem(i, 1, new QTableWidgetItem(QString("date of donation")));
+        ui->tableWidget->setItem(i, 2, new QTableWidgetItem(QString("date of expiration")));
+    }
+}
+// ########################################################################## retrieve data ####################################
+void recipientPage::on_tableWidget_cellDoubleClicked(int row, int column)
+{
+    int index = ui->tableWidget->currentRow(); //hna gbt index el row el double clicked
+    QString type = ui->tableWidget->item(index, 0)->text();
+    QString DOD = ui->tableWidget->item(index, 1)->text();
+    QString DOE = ui->tableWidget->item(index, 2)->text();
+    qDebug() << index << type << DOD << DOE;
+}

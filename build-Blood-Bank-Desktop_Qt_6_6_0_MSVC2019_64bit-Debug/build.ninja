@@ -293,7 +293,7 @@ build Blood-Bank_autogen\EWIEGA46WW\qrc_resources.cpp | ${cmake_ninja_workdir}Bl
 #############################################
 # Phony custom command for CMakeFiles\Blood-Bank_autogen_timestamp_deps
 
-build CMakeFiles\Blood-Bank_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Blood-Bank_autogen_timestamp_deps: phony C$:\Qt\6.6.0\msvc2019_64\.\bin\moc.exe C$:\Qt\6.6.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Widgetsd.lib
+build CMakeFiles\Blood-Bank_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Blood-Bank_autogen_timestamp_deps: phony C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.6.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.6.0\msvc2019_64\.\bin\moc.exe C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Widgetsd.lib
 
 
 #############################################

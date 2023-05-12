@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDateEdit>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -19,6 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -63,6 +65,9 @@ public:
     QPushButton *cancelEditBtn;
     QPushButton *deleteBtn;
     QPushButton *log_out;
+    QTableWidget *tableWidget;
+    QPushButton *pushButton;
+    QSpinBox *spinBox;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -72,7 +77,7 @@ public:
         if (recipientPageClass->objectName().isEmpty())
             recipientPageClass->setObjectName("recipientPageClass");
         recipientPageClass->setEnabled(true);
-        recipientPageClass->resize(600, 455);
+        recipientPageClass->resize(1181, 807);
         recipientPageClass->setAnimated(false);
         recipientPageClass->setDocumentMode(true);
         recipientPageClass->setTabShape(QTabWidget::Rounded);
@@ -511,10 +516,31 @@ public:
 "\n"
 "\n"
 ""));
+        tableWidget = new QTableWidget(centralWidget);
+        if (tableWidget->columnCount() < 3)
+            tableWidget->setColumnCount(3);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        tableWidget->setObjectName("tableWidget");
+        tableWidget->setGeometry(QRect(650, 390, 381, 211));
+        tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
+        tableWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+        tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
+        tableWidget->setWordWrap(true);
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(710, 620, 281, 29));
+        spinBox = new QSpinBox(centralWidget);
+        spinBox->setObjectName("spinBox");
+        spinBox->setGeometry(QRect(830, 320, 48, 29));
         recipientPageClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(recipientPageClass);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 600, 25));
+        menuBar->setGeometry(QRect(0, 0, 1181, 25));
         recipientPageClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(recipientPageClass);
         mainToolBar->setObjectName("mainToolBar");
@@ -557,6 +583,13 @@ public:
         cancelEditBtn->setText(QCoreApplication::translate("recipientPageClass", "cancel", nullptr));
         deleteBtn->setText(QCoreApplication::translate("recipientPageClass", "Delete ", nullptr));
         log_out->setText(QCoreApplication::translate("recipientPageClass", "Log Out", nullptr));
+        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
+        ___qtablewidgetitem->setText(QCoreApplication::translate("recipientPageClass", "TYPE", nullptr));
+        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("recipientPageClass", "DOE", nullptr));
+        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
+        ___qtablewidgetitem2->setText(QCoreApplication::translate("recipientPageClass", "DOE", nullptr));
+        pushButton->setText(QCoreApplication::translate("recipientPageClass", "Display fuching random data", nullptr));
     } // retranslateUi
 
 };
