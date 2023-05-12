@@ -12,6 +12,7 @@
 using namespace std;
 class BloodBankClass
 {
+
 	struct donor {
 		time_t birthDate;
 		string id;
