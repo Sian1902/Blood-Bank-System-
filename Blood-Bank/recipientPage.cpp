@@ -2,6 +2,9 @@
 #include <QDebug>
 #include <QString>
 #include <QLabel>
+#include <ctime>
+#include <QDate>
+#include <QDateEdit>
 #include<string>
 #include "qevent.h"
 recipientPage::recipientPage(QWidget *parent)
@@ -10,20 +13,38 @@ recipientPage::recipientPage(QWidget *parent)
 {
 	ui->setupUi(this);
     ui->updateDataPage->hide();
+    ui->tableWidget->hide();
     ui->requestPage->hide();
-    ui->age->setText("Age: "+QString::fromStdString(to_string(BloodBankClass::bbc->getRecipient().getAge())));
-    ui->name->setText("Name: "+QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->bloodType->setText("Blood Type: "+QString::fromStdString(BloodBankClass::bbc->getRecipient().getBloodType()));
     ui->bloodTypeFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getBloodType()));
     ui->emailFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getMail()));
+    ui->idFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getId()));
+    uiSetter();
+
+}
+recipientPage::~recipientPage()
+{
+  delete ui;
+}
+void recipientPage::uiSetter()
+{
+    std::time_t currentTime = BloodBankClass::bbc->getRecipient().getBirthDate();
+    std::tm* timeInfo = std::localtime(&currentTime);
+    int year = timeInfo->tm_year + 1900;  // Year is offset by 1900 in std::tm
+    int month = timeInfo->tm_mon + 1;     // Month is zero-based in std::tm
+    int day = timeInfo->tm_mday;
+    QDate qdate(year, month, day);
+    ui->age->setText("Age: " + QString::fromStdString(to_string(BloodBankClass::bbc->getRecipient().getAge())));
+    ui->name->setText("Name: " + QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
     ui->doctorFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getDoctorOftheCase()));
     ui->hospitalFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getHospital()));
     ui->nameFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
     ui->passwordFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getPassword()));
-    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->birthDateFeild->setDate(qdate);
+    ui->closeBtn->hide();
+    ui->updateStatus->setText("");
 }
-recipientPage::~recipientPage()
-{}
 void recipientPage::on_requestBtn_clicked() {
     QString amount = ui->amountFeild->text();
 
@@ -39,26 +60,36 @@ void recipientPage::on_requestBtn_clicked() {
 
 void recipientPage::on_updateBtn_clicked()
 {
-    BloodBankClass::bbc->getRecipient().setDoctorOftheCase(ui->doctorFeild->text().toStdString());
-    BloodBankClass::bbc->getRecipient().setHospital(ui->hospitalFeild->text().toStdString());
-    BloodBankClass::bbc->getRecipient().setName(ui->nameFeild->text().toStdString());
-    BloodBankClass::bbc->getRecipient().setPassword(ui->passwordFeild->text().toStdString());
+    string doc = ui->doctorFeild->text().toStdString();
+    string hos = ui->hospitalFeild->text().toStdString();
+    string name = ui->nameFeild->text().toStdString();
+    string pass = ui->passwordFeild->text().toStdString();
+    qint64 birthdate = ui->birthDateFeild->dateTime().toSecsSinceEpoch();
+    if (!doc.empty() && !hos.empty() && !name.empty() && !pass.empty()) {
+        BloodBankClass::bbc->getRecipient().setDoctorOftheCase(doc);
+        BloodBankClass::bbc->getRecipient().setHospital(hos);
+        BloodBankClass::bbc->getRecipient().setName(name);
+        BloodBankClass::bbc->getRecipient().setPassword(pass);
+        BloodBankClass::bbc->getRecipient().setBirthDate(birthdate);
+    }
+    else {
+     
+
+        ui->updateStatus->setText("Blank slots must be filled");
+      
+    }
 }
 
 void recipientPage::closeEvent(QCloseEvent *event)
 {
     BloodBankClass::bbc->~BloodBankClass();
+    QApplication::quit();
     event->accept();
 }
 
 void recipientPage::on_cancelEditBtn_clicked()
 {
-    ui->age->setText("Age: "+QString::fromStdString(to_string(BloodBankClass::bbc->getRecipient().getAge())));
-    ui->name->setText("Name: "+QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
-    ui->doctorFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getDoctorOftheCase()));
-    ui->hospitalFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getHospital()));
-    ui->nameFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
-    ui->passwordFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getPassword()));
+    uiSetter();
 }
 
 
@@ -82,22 +113,49 @@ void recipientPage::on_log_out_clicked()
     loginPage->show();
 }
 // ##################################################### create data ##########################3
-void recipientPage::on_pushButton_clicked()
+void recipientPage::on_bloodDataBtn_clicked()
 {
-    int rowsSize = ui->spinBox->value();
-    ui->tableWidget->setRowCount(rowsSize);
-    for (int i = 0; i < rowsSize; ++i) {
-        ui->tableWidget->setItem(i, 0, new QTableWidgetItem(QString("type")));
-        ui->tableWidget->setItem(i, 1, new QTableWidgetItem(QString("date of donation")));
-        ui->tableWidget->setItem(i, 2, new QTableWidgetItem(QString("date of expiration")));
+    queue<BloodClass> b = BloodBankClass::bbc->getBloodData();
+    ui->tableWidget->setRowCount(b.size());
+    if (b.size() == 0) {
+        ui->tableWidget->setRowCount(1);
     }
+    
+     string bloodType = BloodBankClass::bbc->getRecipient().getBloodType();
+     time_t donationDate;
+     time_t expirationDate;
+     string donationDateStr ;
+     string expirationDateStr;
+    
+     int i = 0;
+   
+     
+
+   while(!b.empty()){
+      
+        donationDate = b.front().getDonationDate();
+        expirationDate = b.front().getExpirationDate();
+        donationDateStr = ctime(&donationDate);
+        expirationDateStr = ctime(&expirationDate);
+        ui->tableWidget->setItem(i, 0, new QTableWidgetItem(QString::fromStdString(bloodType)));
+        ui->tableWidget->setItem(i, 1, new QTableWidgetItem(QString::fromStdString(donationDateStr)));
+        ui->tableWidget->setItem(i, 2, new QTableWidgetItem(QString::fromStdString(expirationDateStr)));
+        b.pop();
+       
+        i++;
+        if (b.empty()) {
+            i--;
+        }
+    }
+   float amount = i * 0.5;
+   ostringstream oss;
+   oss << std::fixed << std::setprecision(1) << amount;
+   string result = oss.str();
+   ui->tableWidget->setItem(i, 0, new QTableWidgetItem("total"));
+   ui->tableWidget->setItem(i, 1, new QTableWidgetItem(QString::fromStdString(to_string(i)) + " Donation"));
+   ui->tableWidget->setItem(i, 2, new QTableWidgetItem(QString::fromStdString(result) + " liters"));
+
+   
+   
 }
-// ########################################################################## retrieve data ####################################
-void recipientPage::on_tableWidget_cellDoubleClicked(int row, int column)
-{
-    int index = ui->tableWidget->currentRow(); //hna gbt index el row el double clicked
-    QString type = ui->tableWidget->item(index, 0)->text();
-    QString DOD = ui->tableWidget->item(index, 1)->text();
-    QString DOE = ui->tableWidget->item(index, 2)->text();
-    qDebug() << index << type << DOD << DOE;
-}
+

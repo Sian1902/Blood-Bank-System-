@@ -37,7 +37,7 @@ void BloodBank::changeStyleSheet(QString path)
 
 void BloodBank::on_loginBtn_clicked()
 {
-    if (ui->emailLineEdit->text().isEmpty() || ui->emailLineEdit->text().isEmpty()
+    if (ui->emailLineEdit->text().isEmpty() || ui->passwordLineEdit->text().isEmpty()
         || ui->buttonGroup->checkedButton() == NULL) {
         ui->statusbar->showMessage("Please fill all the fields", 2000);
     } else {
@@ -104,5 +104,6 @@ void BloodBank::on_pushButton_5_clicked()
 void BloodBank::closeEvent(QCloseEvent *event)
 {
     BloodBankClass::bbc->~BloodBankClass();
+    QApplication::quit();
     event->accept();
 }

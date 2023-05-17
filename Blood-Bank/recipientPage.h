@@ -6,6 +6,8 @@
 #include "bloodBankClass.h"
 #include "bloodbank.h"
 #include<Qlabel>
+#include<ctime>
+#include<time.h>
 QT_BEGIN_NAMESPACE
 namespace Ui { class recipientPage; }
 QT_END_NAMESPACE
@@ -16,7 +18,7 @@ class recipientPage : public QMainWindow
 public:
     recipientPage(QWidget *parent = nullptr);
     ~recipientPage();
-
+    void uiSetter();
 private slots:
     void on_requestBtn_clicked();
     void on_updateBtn_clicked();
@@ -29,9 +31,9 @@ private slots:
 
     void on_log_out_clicked();
 
-    void on_pushButton_clicked();
+    void on_bloodDataBtn_clicked();
 
-    void on_tableWidget_cellDoubleClicked(int row, int column);
+   // void on_tableWidget_cellDoubleClicked(int row, int column);
 
 private:
     Ui::recipientPageClass *ui;

@@ -11,4 +11,5 @@ int DonorClass::getRemainingDays(){
     time_t now;
     time(&now);
     return 90-((now-lastDonationDate)/60/60/24);
+   
 }

@@ -115,5 +115,6 @@ void SignUp::on_pushButton_2_clicked()
 void SignUp::closeEvent(QCloseEvent *event)
 {
     BloodBankClass::bbc->~BloodBankClass();
+    QApplication::quit();
     event->accept();
 }

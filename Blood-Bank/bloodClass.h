@@ -10,7 +10,7 @@ class BloodClass
 {
 	string donorBloodType;
 	time_t donationDate;
-	time_t expirationDate;
+	
 public:
 	BloodClass();
 	void setdonorBloodType(string);

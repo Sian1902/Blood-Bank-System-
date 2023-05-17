@@ -29,6 +29,7 @@ bool BloodBankClass::Regestration(string name, string id, string email, string p
 }
 bool BloodBankClass::login(string email, string password, bool isDonor)
 {
+	
 	if (isDonor) {
 		if (donorsDataMap.count(email)) {
 			if (donorsDataMap[email].getPassword() == password) {
@@ -56,7 +57,7 @@ void BloodBankClass::deleteRecipient()
 	recipientsDataMap.erase(currEmail);
 }
 int BloodBankClass::searchForBlood()
-{
+{ 
 	return bloodDataMap[recipientsDataMap[currEmail].getBloodType()].size();
 }
 bool BloodBankClass::requestBlood(int amount)
@@ -98,7 +99,7 @@ void BloodBankClass::donationRequest()
 	donatedBlood.setdonorBloodType(donorsDataMap[currEmail].getBloodType());
 	donatedBlood.setDate();
 
-	if (abs(donorsDataMap[currEmail].getLastDonationDate() - donatedBlood.getDonationDate())>= (3 * 30 * 24 * 60 * 60))
+     if (donatedBlood.getDonationDate()-donorsDataMap[currEmail].getLastDonationDate() >= (3 * 30 * 24 * 60 * 60))
 	{
 		donorsDataMap[currEmail].setLastDonationDate(donatedBlood.getDonationDate());
 		bloodDataMap[donatedBlood.getdonorBloodType()].push(donatedBlood);
@@ -164,6 +165,7 @@ void BloodBankClass::readDonors(unordered_map<string,DonorClass>& donorDataMap)
 	}
 	donor input;
 	while ( in >> input.email) {
+		
 		in>>input.name >> input.password >> input.birthDate >> input.bloodType >> input.gender >> input.id >> input.lastDonationDate;
 		temp.setMail(input.email);
 		temp.setName(input.name);
@@ -244,4 +246,7 @@ RecipientClass& BloodBankClass::getRecipient(){
 DonorClass& BloodBankClass::getDonor()
 {
     return donorsDataMap[currEmail];
+}
+queue<BloodClass> BloodBankClass::getBloodData(){
+    return bloodDataMap[recipientsDataMap[currEmail].getBloodType()];
 }
