@@ -18,4 +18,5 @@ public:
 	time_t getDonationDate() const;
 	time_t	getExpirationDate() const;
 	void setDate();
+	void setDate(time_t date);
 };

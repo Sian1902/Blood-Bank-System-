@@ -41,7 +41,7 @@ void SignUp::on_pushButton_2_clicked()
         QMessageBox::warning(this, "Missing information", "Please fill all the fields");
     } else if (ui->lineEdit_3->text() == ui->lineEdit_4->text()) {
         if (ui->buttonGroup_3->checkedButton()->text() == "Recipient") {
-            if (ui->lineEdit_5->text().isEmpty() || ui->lineEdit_7->text().isEmpty()) {
+            if ( ui->lineEdit_7->text().isEmpty()) {
                 QMessageBox::warning(this,
                                      "Missing information",
                                      "Please fill the name of the doctor and the disease");
@@ -54,7 +54,7 @@ void SignUp::on_pushButton_2_clicked()
                 string password = ui->lineEdit_3->text().toStdString();
                 password.erase(std::remove_if(password.begin(), password.end(), ::isspace),
                                password.end());
-                string doctor = ui->lineEdit->text().toStdString();
+                string doctor = ui->lineEdit_7->text().toStdString();
                 doctor.erase(std::remove_if(doctor.begin(), doctor.end(), ::isspace), doctor.end());
                 string email = ui->lineEdit_2->text().toStdString();
                 email.erase(std::remove_if(email.begin(), email.end(), ::isspace), email.end());
@@ -68,6 +68,16 @@ void SignUp::on_pushButton_2_clicked()
                     ui->buttonGroup->checkedButton()->text().toStdString(),
                     ui->comboBox->currentText().toStdString(),
                     doctor);
+                if (checkRecipient) {
+                    QMessageBox::information(this,
+                        "Successful signup",
+                        "Go back to login page.");
+                }
+                else {
+                    QMessageBox::warning(this,
+                        "Signup failed",
+                        "ID or Email may be taken.");
+                }
             }
         } else if (ui->buttonGroup_3->checkedButton()->text() == "Donor") {
             if (ui->lineEdit_8->text().isEmpty()) {
@@ -102,6 +112,16 @@ void SignUp::on_pushButton_2_clicked()
                         ui->buttonGroup_2->checkedButton()->text().toStdString(),
                         ui->buttonGroup->checkedButton()->text().toStdString(),
                         timeOfLastDonation);
+                    if (checkDonor) {
+                        QMessageBox::information(this,
+                            "Successful signup",
+                            "Go back to login page.");
+                    }
+                    else {
+                        QMessageBox::warning(this,
+                            "Signup failed",
+                            "ID or Email may be taken.");
+                    }
                 }
             } else {
                 QMessageBox::warning(this, "Disease detected", "Sorry, you can NOT signup");

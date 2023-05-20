@@ -24,11 +24,9 @@ public:
 private slots:
     void on_loginBtn_clicked();
 
-    void on_forgotThePasswordBtn_clicked();
-
-    void on_forgotThePasswordBtn_2_clicked();
 
     void on_pushButton_clicked();
+    void on_forgotThePasswordBtn_clicked();
 
     void on_pushButton_2_clicked();
 

@@ -500,16 +500,6 @@ QPushButton:pressed {
       <string>Birth Date</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="hospitalFeild">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>140</y>
-       <width>141</width>
-       <height>28</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QLabel" name="name_6">
      <property name="geometry">
       <rect>
@@ -634,6 +624,12 @@ QPushButton:pressed {
       <font>
        <family>Times New Roman</family>
       </font>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
      </property>
      <property name="readOnly">
       <bool>false</bool>
@@ -768,15 +764,6 @@ QPushButton:pressed {
            <red>255</red>
            <green>82</green>
            <blue>82</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="96">
-           <red>164</red>
-           <green>166</green>
-           <blue>168</blue>
           </color>
          </brush>
         </colorrole>
@@ -1083,15 +1070,6 @@ QPushButton:pressed {
           </color>
          </brush>
         </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="96">
-           <red>164</red>
-           <green>166</green>
-           <blue>168</blue>
-          </color>
-         </brush>
-        </colorrole>
         <colorrole role="Base">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
@@ -1239,15 +1217,6 @@ QPushButton:pressed {
           </color>
          </brush>
         </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="96">
-           <red>164</red>
-           <green>166</green>
-           <blue>168</blue>
-          </color>
-         </brush>
-        </colorrole>
         <colorrole role="Base">
          <brush brushstyle="SolidPattern">
           <color alpha="255">
@@ -1357,6 +1326,39 @@ QPushButton:pressed {
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
+    </widget>
+    <widget class="QComboBox" name="hospitalFeild">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>150</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <item>
+      <property name="text">
+       <string>hopital_1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>hopital_2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>hopital_3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>hopital_4</string>
+      </property>
+     </item>
     </widget>
    </widget>
    <widget class="QPushButton" name="bloodDataBtn">
@@ -2399,11 +2401,11 @@ QPushButton:pressed {
    <hints>
     <hint type="sourcelabel">
      <x>375</x>
-     <y>474</y>
+     <y>508</y>
     </hint>
     <hint type="destinationlabel">
      <x>375</x>
-     <y>474</y>
+     <y>508</y>
     </hint>
    </hints>
   </connection>
@@ -2415,7 +2417,7 @@ QPushButton:pressed {
    <hints>
     <hint type="sourcelabel">
      <x>375</x>
-     <y>474</y>
+     <y>508</y>
     </hint>
     <hint type="destinationlabel">
      <x>360</x>
@@ -2484,6 +2486,22 @@ QPushButton:pressed {
     <hint type="destinationlabel">
      <x>330</x>
      <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelEditBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>centralWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>414</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>306</y>
     </hint>
    </hints>
   </connection>

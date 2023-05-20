@@ -368,7 +368,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>440</y>
+      <y>490</y>
       <width>321</width>
       <height>51</height>
      </rect>
@@ -551,7 +551,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>50</y>
+      <y>40</y>
       <width>791</width>
       <height>471</height>
      </rect>
@@ -699,6 +699,9 @@ QPushButton:pressed {
        <pointsize>9</pointsize>
        <bold>false</bold>
       </font>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
      </property>
      <property name="readOnly">
       <bool>false</bool>
@@ -1368,7 +1371,7 @@ QPushButton:pressed {
       <string>Log Out</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="bloodTypeFeild_2">
+    <widget class="QLineEdit" name="idFeild">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -1407,7 +1410,73 @@ QPushButton:pressed {
       <string>ID</string>
      </property>
     </widget>
+    <widget class="QLabel" name="updateStatus">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>400</y>
+       <width>491</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>18</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FF5252</string>
+     </property>
+     <property name="text">
+      <string>Doctor</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
    </widget>
+   <widget class="QComboBox" name="hospitalSelect">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>440</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>hopital_1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>hopital_2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>hopital_3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>hopital_4</string>
+     </property>
+    </item>
+   </widget>
+   <zorder>hospitalSelect</zorder>
+   <zorder>header</zorder>
+   <zorder>bloodType</zorder>
+   <zorder>name</zorder>
+   <zorder>age</zorder>
+   <zorder>days</zorder>
+   <zorder>donateBtn</zorder>
+   <zorder>donationStatus</zorder>
+   <zorder>showDataBtn</zorder>
+   <zorder>updateDataPage</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

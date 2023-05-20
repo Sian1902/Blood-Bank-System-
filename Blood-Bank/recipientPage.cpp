@@ -3,6 +3,7 @@
 #include <QString>
 #include <QLabel>
 #include <ctime>
+#include <QMessageBox>
 #include <QDate>
 #include <QDateEdit>
 #include<string>
@@ -38,7 +39,7 @@ void recipientPage::uiSetter()
     ui->age->setText("Age: " + QString::fromStdString(to_string(BloodBankClass::bbc->getRecipient().getAge())));
     ui->name->setText("Name: " + QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
     ui->doctorFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getDoctorOftheCase()));
-    ui->hospitalFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getHospital()));
+    ui->hospitalFeild->setCurrentText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getHospital()));
     ui->nameFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getName()));
     ui->passwordFeild->setText(QString::fromStdString(BloodBankClass::bbc->getRecipient().getPassword()));
     ui->birthDateFeild->setDate(qdate);
@@ -47,12 +48,13 @@ void recipientPage::uiSetter()
 }
 void recipientPage::on_requestBtn_clicked() {
     QString amount = ui->amountFeild->text();
-
-    if(! BloodBankClass::bbc->requestBlood(stoi(amount.toStdString()))){
+    int bags = stoi(amount.toStdString());
+    if(! BloodBankClass::bbc->requestBlood(bags)){
         ui->reqStatus->setText("Request failed");
 
     }
     else{
+        QMessageBox::information(this, "Request succeeded", "You withdrawed "+amount+" blood bags = "+ QString::fromStdString(to_string(bags*0.5))+" liters");
         ui->requestPage->hide();
     }
 
@@ -61,9 +63,12 @@ void recipientPage::on_requestBtn_clicked() {
 void recipientPage::on_updateBtn_clicked()
 {
     string doc = ui->doctorFeild->text().toStdString();
-    string hos = ui->hospitalFeild->text().toStdString();
+    doc.erase(std::remove_if(doc.begin(), doc.end(), ::isspace), doc.end());
+    string hos = ui->hospitalFeild->currentText().toStdString();
     string name = ui->nameFeild->text().toStdString();
+    name.erase(std::remove_if(name.begin(), name.end(), ::isspace), name.end());
     string pass = ui->passwordFeild->text().toStdString();
+    pass.erase(std::remove_if(pass.begin(), pass.end(), ::isspace), pass.end());
     qint64 birthdate = ui->birthDateFeild->dateTime().toSecsSinceEpoch();
     if (!doc.empty() && !hos.empty() && !name.empty() && !pass.empty()) {
         BloodBankClass::bbc->getRecipient().setDoctorOftheCase(doc);
@@ -116,7 +121,7 @@ void recipientPage::on_log_out_clicked()
 void recipientPage::on_bloodDataBtn_clicked()
 {
     queue<BloodClass> b = BloodBankClass::bbc->getBloodData();
-    ui->tableWidget->setRowCount(b.size());
+    ui->tableWidget->setRowCount(b.size()+1);
     if (b.size() == 0) {
         ui->tableWidget->setRowCount(1);
     }
@@ -143,9 +148,7 @@ void recipientPage::on_bloodDataBtn_clicked()
         b.pop();
        
         i++;
-        if (b.empty()) {
-            i--;
-        }
+       
     }
    float amount = i * 0.5;
    ostringstream oss;

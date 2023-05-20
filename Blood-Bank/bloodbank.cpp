@@ -62,23 +62,18 @@ void BloodBank::on_loginBtn_clicked()
     }
 }
 
-void BloodBank::on_forgotThePasswordBtn_clicked()
-{
-    this->hide();
-    signupPage = new SignUp(this);
-    signupPage->show();
-}
 
-void BloodBank::on_forgotThePasswordBtn_2_clicked()
-{
-    this->hide();
-    forgotpasswordPage = new ForgotPassword(this);
-    forgotpasswordPage->show();
-}
 
 void BloodBank::on_pushButton_clicked()
 {
     changeStyleSheet("Fibers.qss");
+}
+
+void BloodBank::on_forgotThePasswordBtn_clicked()
+{
+    this->hide();
+    signupPage = new SignUp();
+    signupPage->show();
 }
 
 void BloodBank::on_pushButton_2_clicked()

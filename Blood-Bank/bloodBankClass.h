@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<unordered_map>
+#include<unordered_set>
 #include <string>
 #include <queue>
 #include"BloodTypes.h"
@@ -36,12 +37,15 @@ class BloodBankClass
 		string doctorOftheCase;
 	};
 	struct blood {
+		string hospital;
 		string donorBloodType;
 		time_t donationDate;
 	};
-	unordered_map<string, queue<BloodClass>> bloodDataMap;
+	unordered_map<string, unordered_map<string ,queue<BloodClass>>> bloodDataMap;
 	unordered_map<string, DonorClass> donorsDataMap;
 	unordered_map<string, RecipientClass> recipientsDataMap;
+	unordered_set <string> ids;
+
      string currEmail;
 	 
 	
@@ -56,12 +60,12 @@ public:
 	int searchForBlood();
 	bool requestBlood(int amount);
 	bool Regestration(string name, string id, string email, string password, time_t birthDate, string gender, string bloodType,time_t dateOfLastDonation);
-	void donationRequest();
+	void donationRequest(string hospital);
 	void writeDonors(unordered_map<string, DonorClass>& donorsDataMap);
-	void writeBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap);
+	void writeBlood(unordered_map<string, unordered_map<string, queue<BloodClass>>>& bloodDataMap);
 	void writeRecipients(unordered_map<string, RecipientClass>& recipientsDataMap);
 	void readDonors(unordered_map<string, DonorClass>& donorsDataMap);
-	void readBlood(unordered_map<string, queue<BloodClass>>& bloodDataMap);
+	void readBlood(unordered_map<string, unordered_map<string, queue<BloodClass>>>& bloodDataMap);
 	void readRecipients(unordered_map<string, RecipientClass>& recipientsDataMap);
     RecipientClass& getRecipient();
     DonorClass& getDonor();

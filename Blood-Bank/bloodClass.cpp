@@ -25,3 +25,7 @@ void BloodClass::setDate()
 { 
 	time(&donationDate);
 }
+void BloodClass::setDate(time_t date)
+{
+	donationDate = date;
+}

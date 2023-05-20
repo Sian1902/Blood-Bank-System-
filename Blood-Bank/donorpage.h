@@ -26,7 +26,8 @@ private slots:
     void on_donateBtn_clicked();
 
     void on_log_out_clicked();
-
+    void on_updateBtn_clicked();
+    void on_cancelEditBtn_clicked();
     void on_deleteBtn_clicked();
 
 private:
