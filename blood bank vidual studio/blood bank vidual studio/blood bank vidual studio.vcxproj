@@ -84,14 +84,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <QtRcc Include="..\..\Blood-Bank\resources.qrc" />
-    <QtRcc Include="bloodbankvidualstudio.qrc" />
     <QtUic Include="..\..\Blood-Bank\bloodbank.ui" />
     <QtUic Include="..\..\Blood-Bank\donorpage.ui" />
     <QtUic Include="..\..\Blood-Bank\recipientPage.ui" />
     <QtUic Include="..\..\Blood-Bank\signup.ui" />
     <QtUic Include="..\..\Blood-Bank\sign_up.ui" />
     <QtUic Include="bloodbankvidualstudio.ui" />
-    <QtMoc Include="bloodbankvidualstudio.h" />
     <ClCompile Include="..\..\Blood-Bank\bloodbank.cpp" />
     <ClCompile Include="..\..\Blood-Bank\bloodBankClass.cpp" />
     <ClCompile Include="..\..\Blood-Bank\bloodClass.cpp" />
@@ -103,8 +101,6 @@
     <ClCompile Include="..\..\Blood-Bank\recipientPage.cpp" />
     <ClCompile Include="..\..\Blood-Bank\signup.cpp" />
     <ClCompile Include="..\..\Blood-Bank\userClass.cpp" />
-    <ClCompile Include="bloodbankvidualstudio.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="..\..\Blood-Bank\bloodbank.h" />

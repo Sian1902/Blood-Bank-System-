@@ -23,26 +23,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="bloodbankvidualstudio.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
     <QtUic Include="bloodbankvidualstudio.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtMoc Include="bloodbankvidualstudio.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <ClCompile Include="bloodbankvidualstudio.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <QtRcc Include="..\..\Blood-Bank\resources.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Blood-Bank\bloodbank.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
