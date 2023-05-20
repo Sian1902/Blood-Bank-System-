@@ -11,12 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3ECA3661-17D5-4D4C-B1FA-1CA27206FF23}</ProjectGuid>
+    <ProjectGuid>{52D45A5D-38DB-4EE3-864F-9DFD03520C50}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
-    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')"
-      >$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -41,11 +40,8 @@
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
-  <Target Name="QtMsBuildNotFound"
-    BeforeTargets="CustomBuild;ClCompile"
-    Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
-    <Message Importance="High"
-      Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
   </Target>
   <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="Shared" />
@@ -87,12 +83,53 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtRcc Include="QtWidgetsApplication3.qrc"/>
-    <QtUic Include="QtWidgetsApplication3.ui"/>
-    <QtMoc Include="QtWidgetsApplication3.h"/>
-    <ClCompile Include="QtWidgetsApplication3.cpp"/>
-    <ClCompile Include="main.cpp"/>
-
+    <QtRcc Include="..\..\Blood-Bank\resources.qrc" />
+    <QtRcc Include="bloodbankvidualstudio.qrc" />
+    <QtUic Include="..\..\Blood-Bank\bloodbank.ui" />
+    <QtUic Include="..\..\Blood-Bank\donorpage.ui" />
+    <QtUic Include="..\..\Blood-Bank\recipientPage.ui" />
+    <QtUic Include="..\..\Blood-Bank\signup.ui" />
+    <QtUic Include="..\..\Blood-Bank\sign_up.ui" />
+    <QtUic Include="bloodbankvidualstudio.ui" />
+    <QtMoc Include="bloodbankvidualstudio.h" />
+    <ClCompile Include="..\..\Blood-Bank\bloodbank.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\bloodBankClass.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\bloodClass.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\donorClass.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\donorpage.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\emailClass.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\main.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\RecipientClass.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\recipientPage.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\signup.cpp" />
+    <ClCompile Include="..\..\Blood-Bank\userClass.cpp" />
+    <ClCompile Include="bloodbankvidualstudio.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\..\Blood-Bank\bloodbank.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Blood-Bank\bloodBankClass.h" />
+    <ClInclude Include="..\..\Blood-Bank\bloodClass.h" />
+    <ClInclude Include="..\..\Blood-Bank\donorClass.h" />
+    <ClInclude Include="..\..\Blood-Bank\emailClass.h" />
+    <ClInclude Include="..\..\Blood-Bank\RecipientClass.h" />
+    <QtMoc Include="..\..\Blood-Bank\recipientPage.h" />
+    <QtMoc Include="..\..\Blood-Bank\signup.h" />
+    <QtMoc Include="..\..\Blood-Bank\donorpage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Blood-Bank\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Blood-Bank\CMakeLists.txt.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Blood-Bank\icons8-sphere-48 (1).png" />
+    <Image Include="..\..\Blood-Bank\icons8-sphere-48 (2).png" />
+    <Image Include="..\..\Blood-Bank\icons8-sphere-48 (3).png" />
+    <Image Include="..\..\Blood-Bank\icons8-sphere-48.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

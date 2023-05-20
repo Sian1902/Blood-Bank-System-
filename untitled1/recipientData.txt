@@ -1,3 +1,0 @@
-tebo@gmail.com tebo 1234 957484800 A- Male 3333 tebo hopital_2
-ahmedrec@gmail.com ahmed 1234 946684800 AB- Male 3333 ahmed hopital_2
-maher@gmail.com maher 1234 1080345600 O+ Male 1234 maher hopital_1

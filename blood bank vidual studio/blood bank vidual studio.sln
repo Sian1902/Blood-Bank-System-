@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "untitled1", "..\..\untitled1\untitled1.vcxproj", "{8C513848-4CFB-3B91-9F92-7AEB60298599}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "blood bank vidual studio", "blood bank vidual studio\blood bank vidual studio.vcxproj", "{52D45A5D-38DB-4EE3-864F-9DFD03520C50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8C513848-4CFB-3B91-9F92-7AEB60298599}.Debug|x64.ActiveCfg = Debug|x64
-		{8C513848-4CFB-3B91-9F92-7AEB60298599}.Debug|x64.Build.0 = Debug|x64
-		{8C513848-4CFB-3B91-9F92-7AEB60298599}.Release|x64.ActiveCfg = Release|x64
-		{8C513848-4CFB-3B91-9F92-7AEB60298599}.Release|x64.Build.0 = Release|x64
+		{52D45A5D-38DB-4EE3-864F-9DFD03520C50}.Debug|x64.ActiveCfg = Debug|x64
+		{52D45A5D-38DB-4EE3-864F-9DFD03520C50}.Debug|x64.Build.0 = Debug|x64
+		{52D45A5D-38DB-4EE3-864F-9DFD03520C50}.Release|x64.ActiveCfg = Release|x64
+		{52D45A5D-38DB-4EE3-864F-9DFD03520C50}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FE0E93C3-F102-416F-8819-D3F7F9ED0C74}
+		SolutionGuid = {5832D3C7-CB45-45FD-B9FC-D095FD615AFE}
 	EndGlobalSection
 EndGlobal

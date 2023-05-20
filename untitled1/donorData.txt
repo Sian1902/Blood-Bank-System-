@@ -1,6 +1,0 @@
-tebo1@gmail.com tebo 1234 946684800 A- Male 3333 1684265002
-hamed@gmail.com hamed 1234 946684800 A+ Male 3333 1684269619
-osama@gmail.com osama 1234 946684800 B- Male 3333 1681084800
-tebo2@gmail.com tebo 1234 946684800 A- Male 3333 1684020574
-tebo3@gmail.com tebo 1234 946684800 A- Male 3333 1684020585
-haitham@gmail.com Haitham 1234 946684800 B+ Male 3333 1684265292

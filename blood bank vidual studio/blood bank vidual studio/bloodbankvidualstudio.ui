@@ -1,8 +1,8 @@
 <UI version="4.0" >
- <class>QtWidgetsApplication3Class</class>
- <widget class="QMainWindow" name="QtWidgetsApplication3Class" >
+ <class>bloodbankvidualstudioClass</class>
+ <widget class="QMainWindow" name="bloodbankvidualstudioClass" >
   <property name="objectName" >
-   <string notr="true">QtWidgetsApplication3Class</string>
+   <string notr="true">bloodbankvidualstudioClass</string>
   </property>
   <property name="geometry" >
    <rect>
@@ -13,7 +13,7 @@
    </rect>
   </property>
   <property name="windowTitle" >
-   <string>QtWidgetsApplication3</string>
+   <string>bloodbankvidualstudio</string>
   </property>  <widget class="QMenuBar" name="menuBar" />
   <widget class="QToolBar" name="mainToolBar" />
   <widget class="QWidget" name="centralWidget" />
@@ -22,7 +22,7 @@
  <layoutDefault spacing="6" margin="11" />
  <pixmapfunction></pixmapfunction>
  <resources>
-   <include location="QtWidgetsApplication3.qrc"/>
+   <include location="bloodbankvidualstudio.qrc"/>
  </resources>
  <connections/>
 </UI>
