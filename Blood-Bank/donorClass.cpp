@@ -4,5 +4,12 @@ void DonorClass::setLastDonationDate(time_t lastDonationDate) { this->lastDonati
 
 DonorClass::DonorClass()
 {
-	time(&lastDonationDate);
+    time(&lastDonationDate);
+}
+
+int DonorClass::getRemainingDays(){
+    time_t now;
+    time(&now);
+    return 90-((now-lastDonationDate)/60/60/24);
+   
 }

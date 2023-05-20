@@ -10,11 +10,13 @@ class BloodClass
 {
 	string donorBloodType;
 	time_t donationDate;
-	time_t expirationDate;
+	
 public:
 	BloodClass();
 	void setdonorBloodType(string);
 	string getdonorBloodType() const;
 	time_t getDonationDate() const;
+	time_t	getExpirationDate() const;
 	void setDate();
+	void setDate(time_t date);
 };

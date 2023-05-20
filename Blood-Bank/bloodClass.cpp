@@ -3,7 +3,7 @@ BloodClass::BloodClass()
 {
 	donorBloodType = "";
 	time(&donationDate);
-	time(&expirationDate);
+	
 }
 void BloodClass::setdonorBloodType(string bloodtype)
 {
@@ -17,8 +17,15 @@ time_t BloodClass::getDonationDate() const
 {
 	return donationDate;
 }
+time_t BloodClass::getExpirationDate() const
+{
+	return (donationDate + (42 * 24 * 60 * 60));
+}
 void BloodClass::setDate()
 { 
 	time(&donationDate);
-	expirationDate = donationDate + (42 * 24 * 60 * 60);
+}
+void BloodClass::setDate(time_t date)
+{
+	donationDate = date;
 }
