@@ -1,5 +1,4 @@
 #include "BloodBankClass.h"
-#include <QDebug>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
@@ -63,10 +62,23 @@ int BloodBankClass::searchForBlood()
 }
 bool BloodBankClass::requestBlood(int amount)
 {
+	time_t todayDate;
+	time(&todayDate);
+	while (!bloodDataMap[recipientsDataMap[currEmail].getHospital()][recipientsDataMap[currEmail].getBloodType()].empty()) {
+		if (bloodDataMap[recipientsDataMap[currEmail].getHospital()][recipientsDataMap[currEmail].getBloodType()].front().getExpirationDate() > todayDate) {
+			break;
+		}
+		bloodDataMap[recipientsDataMap[currEmail].getHospital()][recipientsDataMap[currEmail].getBloodType()].pop();
+	}
 	if (amount <= searchForBlood()) {
+		
 		while (amount--) {
+		
+			
 			bloodDataMap[recipientsDataMap[currEmail].getHospital()][recipientsDataMap[currEmail].getBloodType()].pop();
+
 	  }
+	
 		return true;
 	}
 	return false;
@@ -249,7 +261,10 @@ BloodBankClass::BloodBankClass()
 	for (it1 = recipientsDataMap.begin(); it1 != recipientsDataMap.end(); it1++) {
 		ids.insert(it1->second.getId());
 	}
-    qDebug() << "constructor is called";
+	time_t todayDate;
+	time(&todayDate);
+	
+  
 }
 
 BloodBankClass::~BloodBankClass()
@@ -257,7 +272,7 @@ BloodBankClass::~BloodBankClass()
     writeBlood(bloodDataMap);
     writeDonors(donorsDataMap);
     writeRecipients(recipientsDataMap);
-    qDebug() << "destructor is called";
+ 
 }
 RecipientClass& BloodBankClass::getRecipient(){
     return  recipientsDataMap[currEmail];

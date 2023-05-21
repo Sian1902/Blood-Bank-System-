@@ -120,9 +120,18 @@ void recipientPage::on_log_out_clicked()
 // ##################################################### create data ##########################3
 void recipientPage::on_bloodDataBtn_clicked()
 {
+    time_t todayDate;
+    time(&todayDate);
     queue<BloodClass> b = BloodBankClass::bbc->getBloodData();
+    while(!b.empty()) {
+        if (b.front().getExpirationDate() > todayDate) {
+            break;
+        }
+        b.pop();
+    }
     ui->tableWidget->setRowCount(b.size()+1);
-    if (b.size() == 0) {
+    if (b.size() == 0) 
+    {
         ui->tableWidget->setRowCount(1);
     }
     

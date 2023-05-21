@@ -1,5 +1,4 @@
 hopital_1 A- 1684362792
-hopital_1 A- 1684362792
 hopital_1 A- 1684362793
 hopital_1 AB+ 1684362795
 hopital_1 AB+ 1684362795
