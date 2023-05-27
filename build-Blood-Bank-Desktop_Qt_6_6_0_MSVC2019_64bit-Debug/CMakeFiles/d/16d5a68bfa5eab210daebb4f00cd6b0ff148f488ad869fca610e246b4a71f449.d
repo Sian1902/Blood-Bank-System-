@@ -372,8 +372,6 @@ Blood-Bank_autogen/timestamp: \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/resources.qrc \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.cpp \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.h \
-  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.cpp \
-  C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.h \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/userClass.cpp \
   C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/userClass.h \
   .qtc/package-manager/auto-setup.cmake \

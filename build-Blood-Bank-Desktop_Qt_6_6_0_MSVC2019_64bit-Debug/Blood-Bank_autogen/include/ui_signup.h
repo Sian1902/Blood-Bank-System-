@@ -69,8 +69,6 @@ public:
     QLabel *label_9;
     QLineEdit *lineEdit_7;
     QHBoxLayout *horizontalLayout_4;
-    QLabel *label_5;
-    QLineEdit *lineEdit_5;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_7;
     QComboBox *comboBox;
@@ -106,7 +104,8 @@ public:
     {
         if (SignUp->objectName().isEmpty())
             SignUp->setObjectName("SignUp");
-        SignUp->resize(1024, 680);
+        SignUp->setWindowModality(Qt::NonModal);
+        SignUp->resize(800, 600);
         gridLayout_6 = new QGridLayout(SignUp);
         gridLayout_6->setObjectName("gridLayout_6");
         gridLayout_5 = new QGridLayout();
@@ -158,6 +157,7 @@ public:
 
         lineEdit_6 = new QLineEdit(SignUp);
         lineEdit_6->setObjectName("lineEdit_6");
+        lineEdit_6->setMaxLength(4);
 
         horizontalLayout_9->addWidget(lineEdit_6);
 
@@ -302,18 +302,6 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        label_5 = new QLabel(widget);
-        label_5->setObjectName("label_5");
-        label_5->setCursor(QCursor(Qt::ArrowCursor));
-        label_5->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse);
-
-        horizontalLayout_4->addWidget(label_5);
-
-        lineEdit_5 = new QLineEdit(widget);
-        lineEdit_5->setObjectName("lineEdit_5");
-
-        horizontalLayout_4->addWidget(lineEdit_5);
-
 
         verticalLayout_2->addLayout(horizontalLayout_4);
 
@@ -516,8 +504,7 @@ public:
         QWidget::setTabOrder(radioButton_2, radioButton_5);
         QWidget::setTabOrder(radioButton_5, radioButton_6);
         QWidget::setTabOrder(radioButton_6, lineEdit_7);
-        QWidget::setTabOrder(lineEdit_7, lineEdit_5);
-        QWidget::setTabOrder(lineEdit_5, comboBox);
+        QWidget::setTabOrder(lineEdit_7, comboBox);
         QWidget::setTabOrder(comboBox, dateEdit_2);
         QWidget::setTabOrder(dateEdit_2, comboBox_2);
         QWidget::setTabOrder(comboBox_2, lineEdit_8);
@@ -548,8 +535,8 @@ public:
         lineEdit->setPlaceholderText(QCoreApplication::translate("SignUp", "First name only", nullptr));
         label_2->setText(QCoreApplication::translate("SignUp", "Email", nullptr));
         lineEdit_2->setPlaceholderText(QCoreApplication::translate("SignUp", "Acceptable format: ex@ex.com", nullptr));
-        label_8->setText(QCoreApplication::translate("SignUp", "National ID", nullptr));
-        lineEdit_6->setPlaceholderText(QCoreApplication::translate("SignUp", "Numbers only", nullptr));
+        label_8->setText(QCoreApplication::translate("SignUp", " ID", nullptr));
+        lineEdit_6->setPlaceholderText(QCoreApplication::translate("SignUp", "No spaces", nullptr));
         label_3->setText(QCoreApplication::translate("SignUp", "Password", nullptr));
         lineEdit_3->setPlaceholderText(QCoreApplication::translate("SignUp", "No spaces", nullptr));
         label_4->setText(QCoreApplication::translate("SignUp", "Confirm Password", nullptr));
@@ -571,11 +558,6 @@ public:
         lineEdit_7->setToolTip(QCoreApplication::translate("SignUp", "The first name of the responsible doctor of the case", nullptr));
 #endif // QT_CONFIG(tooltip)
         lineEdit_7->setPlaceholderText(QCoreApplication::translate("SignUp", "First name only", nullptr));
-        label_5->setText(QCoreApplication::translate("SignUp", "Disease", nullptr));
-#if QT_CONFIG(tooltip)
-        lineEdit_5->setToolTip(QCoreApplication::translate("SignUp", "The disease you suffer from", nullptr));
-#endif // QT_CONFIG(tooltip)
-        lineEdit_5->setPlaceholderText(QString());
         label_7->setText(QCoreApplication::translate("SignUp", "Hospital", nullptr));
         comboBox->setItemText(0, QCoreApplication::translate("SignUp", "hopital_1", nullptr));
         comboBox->setItemText(1, QCoreApplication::translate("SignUp", "hopital_2", nullptr));

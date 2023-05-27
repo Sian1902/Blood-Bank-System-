@@ -553,7 +553,7 @@ QPushButton:pressed {
       <x>0</x>
       <y>40</y>
       <width>791</width>
-      <height>471</height>
+      <height>491</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1484,7 +1484,7 @@ QPushButton:pressed {
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>28</height>
+     <height>32</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuDonor">

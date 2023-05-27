@@ -72,7 +72,9 @@ void BloodBank::on_pushButton_clicked()
 void BloodBank::on_forgotThePasswordBtn_clicked()
 {
     this->hide();
-    signupPage = new SignUp();
+    signupPage = new SignUp(this);
+    QRect pos = this->geometry();
+    signupPage->setGeometry(pos.x(), pos.y(), 800, 600);
     signupPage->show();
 }
 

@@ -16,8 +16,6 @@ set(PROJECT_SOURCES
     main.cpp
             bloodbank.cpp
             bloodbank.h
-            user.cpp
-            user.h
             bloodbank.ui
             signup.cpp
             signup.h

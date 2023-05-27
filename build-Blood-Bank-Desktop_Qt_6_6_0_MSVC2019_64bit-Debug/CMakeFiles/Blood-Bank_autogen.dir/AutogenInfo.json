@@ -337,12 +337,6 @@
 			null
 		],
 		[
-			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.h",
-			"MU",
-			"EWIEGA46WW/moc_user.cpp",
-			null
-		],
-		[
 			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/userClass.h",
 			"MU",
 			"EWIEGA46WW/moc_userClass.cpp",
@@ -455,11 +449,6 @@
 		],
 		[
 			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/signup.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/Ahmed/Documents/GitHub/Blood-Bank-System-/Blood-Bank/user.cpp",
 			"MU",
 			null
 		],

@@ -116,8 +116,7 @@ void SignUp::on_pushButton_2_clicked()
                         QMessageBox::information(this,
                             "Successful signup",
                             "Go back to login page.");
-                    }
-                    else {
+                    } else {
                         QMessageBox::warning(this,
                             "Signup failed",
                             "ID or Email may be taken.");

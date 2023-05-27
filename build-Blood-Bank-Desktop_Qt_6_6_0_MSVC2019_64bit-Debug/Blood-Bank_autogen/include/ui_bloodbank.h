@@ -35,9 +35,7 @@ public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_3;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButton;
     QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
     QLabel *label;
@@ -53,7 +51,6 @@ public:
     QRadioButton *radioButton;
     QRadioButton *radioButton_2;
     QPushButton *loginBtn;
-    QPushButton *forgotThePasswordBtn_2;
     QPushButton *forgotThePasswordBtn;
     QStatusBar *statusbar;
     QButtonGroup *buttonGroup;
@@ -62,7 +59,7 @@ public:
     {
         if (BloodBank->objectName().isEmpty())
             BloodBank->setObjectName("BloodBank");
-        BloodBank->resize(1024, 680);
+        BloodBank->resize(800, 600);
         BloodBank->setStyleSheet(QString::fromUtf8(""));
         centralwidget = new QWidget(BloodBank);
         centralwidget->setObjectName("centralwidget");
@@ -77,14 +74,6 @@ public:
 
         horizontalLayout_3->addItem(horizontalSpacer);
 
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton->setStyleSheet(QString::fromUtf8("image: url(:/img/icons8-sphere-48.png);"));
-        pushButton->setFlat(true);
-
-        horizontalLayout_3->addWidget(pushButton);
-
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
@@ -93,15 +82,6 @@ public:
         pushButton_2->setFlat(true);
 
         horizontalLayout_3->addWidget(pushButton_2);
-
-        pushButton_3 = new QPushButton(centralwidget);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_3->setStyleSheet(QString::fromUtf8("image: url(:/img/icons8-sphere-48 (2).png);"));
-        pushButton_3->setCheckable(false);
-        pushButton_3->setFlat(true);
-
-        horizontalLayout_3->addWidget(pushButton_3);
 
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName("pushButton_4");
@@ -209,13 +189,6 @@ public:
 
         verticalLayout->addWidget(loginBtn);
 
-        forgotThePasswordBtn_2 = new QPushButton(centralwidget);
-        forgotThePasswordBtn_2->setObjectName("forgotThePasswordBtn_2");
-        forgotThePasswordBtn_2->setCursor(QCursor(Qt::PointingHandCursor));
-        forgotThePasswordBtn_2->setFlat(true);
-
-        verticalLayout->addWidget(forgotThePasswordBtn_2);
-
         forgotThePasswordBtn = new QPushButton(centralwidget);
         forgotThePasswordBtn->setObjectName("forgotThePasswordBtn");
         forgotThePasswordBtn->setCursor(QCursor(Qt::PointingHandCursor));
@@ -234,11 +207,8 @@ public:
         QWidget::setTabOrder(passwordLineEdit, radioButton);
         QWidget::setTabOrder(radioButton, radioButton_2);
         QWidget::setTabOrder(radioButton_2, loginBtn);
-        QWidget::setTabOrder(loginBtn, forgotThePasswordBtn_2);
-        QWidget::setTabOrder(forgotThePasswordBtn_2, forgotThePasswordBtn);
-        QWidget::setTabOrder(forgotThePasswordBtn, pushButton);
-        QWidget::setTabOrder(pushButton, pushButton_2);
-        QWidget::setTabOrder(pushButton_2, pushButton_3);
+        QWidget::setTabOrder(loginBtn, forgotThePasswordBtn);
+        QWidget::setTabOrder(forgotThePasswordBtn, pushButton_2);
 
         retranslateUi(BloodBank);
 
@@ -249,17 +219,9 @@ public:
     {
         BloodBank->setWindowTitle(QCoreApplication::translate("BloodBank", "BloodBank", nullptr));
 #if QT_CONFIG(tooltip)
-        pushButton->setToolTip(QCoreApplication::translate("BloodBank", "Red theme", nullptr));
-#endif // QT_CONFIG(tooltip)
-        pushButton->setText(QString());
-#if QT_CONFIG(tooltip)
         pushButton_2->setToolTip(QCoreApplication::translate("BloodBank", "Dark mode", nullptr));
 #endif // QT_CONFIG(tooltip)
         pushButton_2->setText(QString());
-#if QT_CONFIG(tooltip)
-        pushButton_3->setToolTip(QCoreApplication::translate("BloodBank", "Green theme", nullptr));
-#endif // QT_CONFIG(tooltip)
-        pushButton_3->setText(QString());
 #if QT_CONFIG(tooltip)
         pushButton_4->setToolTip(QCoreApplication::translate("BloodBank", "Dark orange mode", nullptr));
 #endif // QT_CONFIG(tooltip)
@@ -289,7 +251,6 @@ public:
 #if QT_CONFIG(shortcut)
         loginBtn->setShortcut(QCoreApplication::translate("BloodBank", "Return", nullptr));
 #endif // QT_CONFIG(shortcut)
-        forgotThePasswordBtn_2->setText(QCoreApplication::translate("BloodBank", "Forgot the password?", nullptr));
         forgotThePasswordBtn->setText(QCoreApplication::translate("BloodBank", "Don't have an accout, Signup", nullptr));
     } // retranslateUi
 
