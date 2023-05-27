@@ -67,5 +67,5 @@ Others:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Demo
-<a href="Blood_Bank.mp4">Blood_Bank_video</a>
+<a href="https://drive.google.com/file/d/1_SPFf7o677RZSv87S4bfePxINTFLA5qu/view?usp=sharing">Blood_Bank_video</a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
