@@ -15,6 +15,9 @@
     <li>
       <a href="#Features">Features</a>
     </li>
+    <li>
+      <a href="#Demo">Demo</a>
+    </li>
   </ol>
 </details>
 
