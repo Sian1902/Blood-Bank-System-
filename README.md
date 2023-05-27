@@ -12,6 +12,9 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#Features">Features</a>
+    </li>
   </ol>
 </details>
 
